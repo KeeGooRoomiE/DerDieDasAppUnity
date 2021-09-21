@@ -30,8 +30,10 @@ public class QuizController : MonoBehaviour
         if (isRight == true)
         {
             trueStateImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            falseStateImage.color = new Color(1.0f, 1.0f, 1.0f, 0f);
         } else
         {
+            trueStateImage.color = new Color(1.0f, 1.0f, 1.0f, 0f);
             falseStateImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         }
 
