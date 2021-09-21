@@ -58,3 +58,21 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+DerDieDasApp/Library/
+DerDieDasApp/Logs/
+DerDieDasApp/Temp/
+DerDieDasApp/App/
+DerDieDasApp/Library/ArtifactDB
+DerDieDasApp/Library/Artifacts/2b/2bb1e5fe6d51770f791b48f158c882f5
+DerDieDasApp/Library/PackageManager/ProjectCache
+DerDieDasApp/Library/PackageManager/ProjectCache.md5
+DerDieDasApp/Library/SourceAssetDB
+DerDieDasApp/Logs/AssetImportWorker0-prev.log
+DerDieDasApp/Logs/shadercompiler-UnityShaderCompiler0.log
+DerDieDasApp/Logs/shadercompiler-UnityShaderCompiler1.log
+DerDieDasApp/Logs/shadercompiler-UnityShaderCompiler2.log
+DerDieDasApp/Logs/shadercompiler-UnityShaderCompiler3.log
+DerDieDasApp/Logs/shadercompiler-UnityShaderCompiler4.log
+DerDieDasApp/Logs/shadercompiler-UnityShaderCompiler5.log
+DerDieDasApp/Logs/shadercompiler-UnityShaderCompiler6.log
+DerDieDasApp/Logs/shadercompiler-UnityShaderCompiler7.log
