@@ -19,7 +19,6 @@ public class CardSetupManager : MonoBehaviour
     void Start()
     {
         SetLevel();
-        SetCard();
     }
 
     /*

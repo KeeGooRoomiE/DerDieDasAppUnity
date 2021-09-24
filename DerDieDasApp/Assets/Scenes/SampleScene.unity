@@ -157,10 +157,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 548, y: -1278.3345}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &37194787
 MonoBehaviour:
@@ -209,6 +209,18 @@ MonoBehaviour:
       - m_Target: {fileID: 37194790}
         m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
         m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334460401}
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -812,10 +824,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 184, y: -186.33447}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &146673740
 MonoBehaviour:
@@ -864,6 +876,18 @@ MonoBehaviour:
       - m_Target: {fileID: 146673743}
         m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
         m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334460401}
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2701,23 +2725,23 @@ MonoBehaviour:
   fav: []
   timeA1:
   - cardId: 0
-    rightAnswer: 0
+    rightAnswer: 1
     isFav: 0
-    tippText: 
-    image: {fileID: 0}
-    sound: {fileID: 0}
-  - cardId: 0
-    rightAnswer: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 330aae23b8673454ebb8f5a5da441e51, type: 3}
+    sound: {fileID: 8300000, guid: 6f9aeae91d30148c686d8f0bf03fbff3, type: 3}
+  - cardId: 1
+    rightAnswer: 1
     isFav: 0
-    tippText: 
-    image: {fileID: 0}
-    sound: {fileID: 0}
-  - cardId: 0
-    rightAnswer: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 633d7bc4849254220b180351c12ac32a, type: 3}
+    sound: {fileID: 8300000, guid: 6f1d69571f7294ccb895573f0990588f, type: 3}
+  - cardId: 2
+    rightAnswer: 1
     isFav: 0
-    tippText: 
-    image: {fileID: 0}
-    sound: {fileID: 0}
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 87407da8b83334e29856d2e8fa2fe1ed, type: 3}
+    sound: {fileID: 8300000, guid: ae60b643d521b4f278dafcc5c8dd17a2, type: 3}
   timeA2:
   - cardId: 0
     rightAnswer: 0
@@ -2738,24 +2762,24 @@ MonoBehaviour:
     image: {fileID: 0}
     sound: {fileID: 0}
   healthA1:
-  - cardId: 0
+  - cardId: 3
     rightAnswer: 0
     isFav: 0
-    tippText: 
-    image: {fileID: 0}
-    sound: {fileID: 0}
-  - cardId: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 89845377fb4914a3b83aa692b84c4e26, type: 3}
+    sound: {fileID: 8300000, guid: 455ca457e3c40491fbeb11a9245fdfc6, type: 3}
+  - cardId: 4
     rightAnswer: 0
     isFav: 0
-    tippText: 
-    image: {fileID: 0}
-    sound: {fileID: 0}
-  - cardId: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 85ec5c1144b6343d5a265c1c6960a05d, type: 3}
+    sound: {fileID: 8300000, guid: a0dbbe74e3ac944d7a51f9ac5af0916e, type: 3}
+  - cardId: 5
     rightAnswer: 0
     isFav: 0
-    tippText: 
-    image: {fileID: 0}
-    sound: {fileID: 0}
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: eb739ff5c9edd490f82067be6a58c869, type: 3}
+    sound: {fileID: 8300000, guid: 16f8a01f743f146069b7566207191c94, type: 3}
   healthA2:
   - cardId: 0
     rightAnswer: 0
@@ -4369,10 +4393,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 184, y: -1642.3345}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &580280985
 MonoBehaviour:
@@ -4421,6 +4445,18 @@ MonoBehaviour:
       - m_Target: {fileID: 580280988}
         m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
         m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334460401}
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4631,10 +4667,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 184, y: -1278.3345}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &614134791
 MonoBehaviour:
@@ -4683,6 +4719,18 @@ MonoBehaviour:
       - m_Target: {fileID: 614134794}
         m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
         m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334460401}
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5876,10 +5924,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 184, y: -2006.3345}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &853330896
 MonoBehaviour:
@@ -5928,6 +5976,18 @@ MonoBehaviour:
       - m_Target: {fileID: 853330899}
         m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
         m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334460401}
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7751,10 +7811,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 548, y: -1642.3345}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1146204264
 MonoBehaviour:
@@ -7803,6 +7863,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1146204267}
         m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
         m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334460401}
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8234,10 +8306,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 184, y: -550.3345}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248858668
 MonoBehaviour:
@@ -8286,6 +8358,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1248858671}
         m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
         m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334460401}
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8729,10 +8813,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 548, y: -186.33447}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318300464
 MonoBehaviour:
@@ -8781,6 +8865,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1318300467}
         m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
         m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334460401}
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11944,10 +12040,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 548, y: -914.3345}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761916061
 MonoBehaviour:
@@ -11996,6 +12092,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1761916064}
         m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
         m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334460401}
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12485,10 +12593,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 184, y: -914.3345}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781103364
 MonoBehaviour:
@@ -12537,6 +12645,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1781103367}
         m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
         m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334460401}
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12741,10 +12861,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 548, y: -550.3345}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1872102455
 MonoBehaviour:
@@ -12793,6 +12913,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1872102458}
         m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
         m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334460401}
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
