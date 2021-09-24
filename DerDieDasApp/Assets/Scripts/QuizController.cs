@@ -8,11 +8,16 @@ public class QuizController : MonoBehaviour
 {
     public Image falseStateImage;
     public Image trueStateImage;
-    [SerializeField] private Button nextQuizButton;
-    [SerializeField] private Slider progressBarSlider;
-    [SerializeField] private TextMeshProUGUI tippText;
-    [SerializeField] private Toggle tippButton;
-    [SerializeField] private Toggle favButton;
+    public Slider progressBarSlider;
+    public Image targetImage;
+    public AnswerButtonState derButton;
+    public AnswerButtonState dieButton;
+    public AnswerButtonState dasButton;
+    public Toggle tippButton;
+    public TextMeshProUGUI tippText;
+    public Toggle favButton;
+    public Button nextQuizButton;
+    public AudioSource musicSource;
     private float progressBarCounter;
     [SerializeField] private int progressBarModifier = 10;
 

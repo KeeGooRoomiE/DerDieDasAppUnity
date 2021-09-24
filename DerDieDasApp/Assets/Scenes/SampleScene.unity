@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 37194789}
   - component: {fileID: 37194788}
   - component: {fileID: 37194787}
+  - component: {fileID: 37194790}
   m_Layer: 5
   m_Name: TransportButton
   m_TagString: Untagged
@@ -205,6 +206,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 37194790}
+        m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
+        m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1698544716}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -221,18 +234,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: AdsLoader, Assembly-CSharp
-        m_MethodName: ShowAds
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -279,6 +280,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37194785}
   m_CullTransparentMesh: 1
+--- !u!114 &37194790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37194785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba56d4a15b81844bdbc8b226ebc700a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 334460401}
+  myTheme: 7
 --- !u!1 &65998444
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +790,7 @@ GameObject:
   - component: {fileID: 146673742}
   - component: {fileID: 146673741}
   - component: {fileID: 146673740}
+  - component: {fileID: 146673743}
   m_Layer: 5
   m_Name: FavouritesButton
   m_TagString: Untagged
@@ -844,7 +860,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 146673741}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 146673743}
+        m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
+        m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1698544716}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2004223782}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &146673741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,6 +935,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146673738}
   m_CullTransparentMesh: 1
+--- !u!114 &146673743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146673738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba56d4a15b81844bdbc8b226ebc700a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 334460401}
+  myTheme: 0
 --- !u!1 &166130996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,6 +2570,7 @@ GameObject:
   - component: {fileID: 334460395}
   - component: {fileID: 334460399}
   - component: {fileID: 334460401}
+  - component: {fileID: 334460400}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2608,12 +2675,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   falseStateImage: {fileID: 476234140}
   trueStateImage: {fileID: 2093075163}
-  nextQuizButton: {fileID: 652827754}
   progressBarSlider: {fileID: 1736726771}
-  tippText: {fileID: 1885142562}
+  targetImage: {fileID: 598907259}
+  derButton: {fileID: 1994349063}
+  dieButton: {fileID: 479738479}
+  dasButton: {fileID: 1992767097}
   tippButton: {fileID: 1145034674}
+  tippText: {fileID: 1885142562}
   favButton: {fileID: 1064644429}
+  nextQuizButton: {fileID: 652827754}
+  musicSource: {fileID: 290226309}
   progressBarModifier: 30
+--- !u!114 &334460400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334460394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2c8e7e2cd374df3a5f387a1d6663c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fav: []
+  timeA1:
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
+  timeA2:
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
+  healthA1:
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
+  healthA2:
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
+  - cardId: 0
+    rightAnswer: 0
+    isFav: 0
+    tippText: 
+    image: {fileID: 0}
+    sound: {fileID: 0}
 --- !u!114 &334460401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2627,66 +2788,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game: {fileID: 334460399}
+  cards: {fileID: 334460400}
+  selectedLevel: 0
+  selectedTheme: 0
   currentWordNumber: 0
-  derButton: {fileID: 1994349063}
-  dieButton: {fileID: 479738479}
-  dasButton: {fileID: 1992767097}
-  tippButton: {fileID: 1145034674}
-  targetImage: {fileID: 142903507}
-  tippText: {fileID: 1885142562}
-  musicSource: {fileID: 290226309}
-  favButton: {fileID: 1064644429}
-  levelSet:
-  - image: {fileID: 21300000, guid: 599c476351ad34b96b144393ce29e11b, type: 3}
-    rightAnswer: 1
-    music: {fileID: 8300000, guid: c3d0d5b9ac6214bdbafbe5f486da264b, type: 3}
-    isFav: 0
-    tippText: Tage, Monate, jahrezeiten immer - der
-  - image: {fileID: 21300000, guid: 330aae23b8673454ebb8f5a5da441e51, type: 3}
-    rightAnswer: 1
-    music: {fileID: 8300000, guid: 9b3d5d7157c25445f98411182b597fa0, type: 3}
-    isFav: 0
-    tippText: Tage, Monate, jahrezeiten immer - der
-  - image: {fileID: 21300000, guid: 633d7bc4849254220b180351c12ac32a, type: 3}
-    rightAnswer: 1
-    music: {fileID: 8300000, guid: b31aa5f6f3186411fbce1e9435a693f2, type: 3}
-    isFav: 0
-    tippText: Tage, Monate, jahrezeiten immer - der
-  - image: {fileID: 21300000, guid: 87407da8b83334e29856d2e8fa2fe1ed, type: 3}
-    rightAnswer: 1
-    music: {fileID: 8300000, guid: ba3d6f7fad89a4c40b256c6a583c9ae9, type: 3}
-    isFav: 0
-    tippText: Tage, Monate, jahrezeiten immer - der
-  - image: {fileID: 21300000, guid: 6ad38f6aebda54734a5045e1c87d070b, type: 3}
-    rightAnswer: 1
-    music: {fileID: 8300000, guid: 1f68c10ba56944671a459b9f4f7d70c6, type: 3}
-    isFav: 0
-    tippText: Tage, Monate, jahrezeiten immer - der
-  - image: {fileID: 21300000, guid: 30a9eefa0faf8411fbef5dc497000eb4, type: 3}
-    rightAnswer: 1
-    music: {fileID: 8300000, guid: 15291ae91256e4833ad62271e7c231b7, type: 3}
-    isFav: 0
-    tippText: Tage, Monate, jahrezeiten immer - der
-  - image: {fileID: 21300000, guid: bdb4b7e57350749cd809c8a168a83db4, type: 3}
-    rightAnswer: 1
-    music: {fileID: 8300000, guid: 97126171800a146878a6a2dc270237d0, type: 3}
-    isFav: 0
-    tippText: Tage, Monate, jahrezeiten immer - der
-  - image: {fileID: 21300000, guid: 05ce855dd944d4305b9534f797ce0087, type: 3}
-    rightAnswer: 1
-    music: {fileID: 8300000, guid: 4ce4ea1c8f07f4623b3db840f3590679, type: 3}
-    isFav: 0
-    tippText: Tage, Monate, jahrezeiten immer - der
-  - image: {fileID: 21300000, guid: d517e5f7c43794738af52117361176d5, type: 3}
-    rightAnswer: 1
-    music: {fileID: 8300000, guid: 00e353ca01c6949149a60ec374e791e8, type: 3}
-    isFav: 0
-    tippText: Tage, Monate, jahrezeiten immer - der
-  - image: {fileID: 21300000, guid: d72d7479a0e2c48be9ca38ded0970bf3, type: 3}
-    rightAnswer: 2
-    music: {fileID: 8300000, guid: a56d187f728824388a14b900d29bd927, type: 3}
-    isFav: 0
-    tippText: Tage, Monate, jahrezeiten immer - der
+  cardFavIsOn: 0
 --- !u!1 &390683064
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,6 +4347,7 @@ GameObject:
   - component: {fileID: 580280987}
   - component: {fileID: 580280986}
   - component: {fileID: 580280985}
+  - component: {fileID: 580280988}
   m_Layer: 5
   m_Name: WeatherButton
   m_TagString: Untagged
@@ -4311,6 +4418,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 580280988}
+        m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
+        m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1698544716}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -4327,18 +4446,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: AdsLoader, Assembly-CSharp
-        m_MethodName: ShowAds
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4385,6 +4492,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580280983}
   m_CullTransparentMesh: 1
+--- !u!114 &580280988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580280983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba56d4a15b81844bdbc8b226ebc700a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 334460401}
+  myTheme: 8
 --- !u!1 &598907257
 GameObject:
   m_ObjectHideFlags: 0
@@ -4488,6 +4609,7 @@ GameObject:
   - component: {fileID: 614134793}
   - component: {fileID: 614134792}
   - component: {fileID: 614134791}
+  - component: {fileID: 614134794}
   m_Layer: 5
   m_Name: ClothesButton
   m_TagString: Untagged
@@ -4558,6 +4680,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 614134794}
+        m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
+        m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1698544716}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -4574,18 +4708,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: AdsLoader, Assembly-CSharp
-        m_MethodName: ShowAds
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4632,6 +4754,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614134789}
   m_CullTransparentMesh: 1
+--- !u!114 &614134794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614134789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba56d4a15b81844bdbc8b226ebc700a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 334460401}
+  myTheme: 6
 --- !u!1 &615089671
 GameObject:
   m_ObjectHideFlags: 0
@@ -5718,6 +5854,7 @@ GameObject:
   - component: {fileID: 853330898}
   - component: {fileID: 853330897}
   - component: {fileID: 853330896}
+  - component: {fileID: 853330899}
   m_Layer: 5
   m_Name: FoodButton
   m_TagString: Untagged
@@ -5788,6 +5925,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 853330899}
+        m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
+        m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1698544716}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -5804,18 +5953,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: AdsLoader, Assembly-CSharp
-        m_MethodName: ShowAds
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5862,6 +5999,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853330894}
   m_CullTransparentMesh: 1
+--- !u!114 &853330899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853330894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba56d4a15b81844bdbc8b226ebc700a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 334460401}
+  myTheme: 10
 --- !u!1 &854639946
 GameObject:
   m_ObjectHideFlags: 0
@@ -7578,6 +7729,7 @@ GameObject:
   - component: {fileID: 1146204266}
   - component: {fileID: 1146204265}
   - component: {fileID: 1146204264}
+  - component: {fileID: 1146204267}
   m_Layer: 5
   m_Name: HomeButton
   m_TagString: Untagged
@@ -7648,6 +7800,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1146204267}
+        m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
+        m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1698544716}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -7664,18 +7828,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: AdsLoader, Assembly-CSharp
-        m_MethodName: ShowAds
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7722,6 +7874,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146204262}
   m_CullTransparentMesh: 1
+--- !u!114 &1146204267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146204262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba56d4a15b81844bdbc8b226ebc700a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 334460401}
+  myTheme: 9
 --- !u!1 &1165163632
 GameObject:
   m_ObjectHideFlags: 0
@@ -8046,6 +8212,7 @@ GameObject:
   - component: {fileID: 1248858670}
   - component: {fileID: 1248858669}
   - component: {fileID: 1248858668}
+  - component: {fileID: 1248858671}
   m_Layer: 5
   m_Name: JobsButton
   m_TagString: Untagged
@@ -8116,6 +8283,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1248858671}
+        m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
+        m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1698544716}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -8132,18 +8311,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: AdsLoader, Assembly-CSharp
-        m_MethodName: ShowAds
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8190,6 +8357,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248858666}
   m_CullTransparentMesh: 1
+--- !u!114 &1248858671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248858666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba56d4a15b81844bdbc8b226ebc700a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 334460401}
+  myTheme: 3
 --- !u!1 &1258763168
 GameObject:
   m_ObjectHideFlags: 0
@@ -8525,6 +8706,7 @@ GameObject:
   - component: {fileID: 1318300466}
   - component: {fileID: 1318300465}
   - component: {fileID: 1318300464}
+  - component: {fileID: 1318300467}
   m_Layer: 5
   m_Name: TimeButton
   m_TagString: Untagged
@@ -8596,6 +8778,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1318300467}
+        m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
+        m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1698544716}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -8612,18 +8806,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: AdsLoader, Assembly-CSharp
-        m_MethodName: ShowAds
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8670,6 +8852,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318300462}
   m_CullTransparentMesh: 1
+--- !u!114 &1318300467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318300462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba56d4a15b81844bdbc8b226ebc700a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 334460401}
+  myTheme: 1
 --- !u!1 &1331747134
 GameObject:
   m_ObjectHideFlags: 0
@@ -10006,7 +10202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 3
-  m_AspectRatio: 6
+  m_AspectRatio: 5
 --- !u!114 &1498708277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10054,23 +10250,23 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 38
+  m_fontSizeBase: 38
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 8192
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 128
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -11726,6 +11922,7 @@ GameObject:
   - component: {fileID: 1761916063}
   - component: {fileID: 1761916062}
   - component: {fileID: 1761916061}
+  - component: {fileID: 1761916064}
   m_Layer: 5
   m_Name: HealthButton
   m_TagString: Untagged
@@ -11796,6 +11993,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1761916064}
+        m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
+        m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1698544716}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -11812,18 +12021,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: AdsLoader, Assembly-CSharp
-        m_MethodName: ShowAds
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11870,6 +12067,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761916059}
   m_CullTransparentMesh: 1
+--- !u!114 &1761916064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761916059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba56d4a15b81844bdbc8b226ebc700a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 334460401}
+  myTheme: 2
 --- !u!1 &1768326047
 GameObject:
   m_ObjectHideFlags: 0
@@ -12252,6 +12463,7 @@ GameObject:
   - component: {fileID: 1781103366}
   - component: {fileID: 1781103365}
   - component: {fileID: 1781103364}
+  - component: {fileID: 1781103367}
   m_Layer: 5
   m_Name: PlacesButton
   m_TagString: Untagged
@@ -12322,6 +12534,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1781103367}
+        m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
+        m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1698544716}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -12338,18 +12562,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: AdsLoader, Assembly-CSharp
-        m_MethodName: ShowAds
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12396,6 +12608,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781103362}
   m_CullTransparentMesh: 1
+--- !u!114 &1781103367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781103362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba56d4a15b81844bdbc8b226ebc700a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 334460401}
+  myTheme: 5
 --- !u!1 &1822232202
 GameObject:
   m_ObjectHideFlags: 0
@@ -12493,6 +12719,7 @@ GameObject:
   - component: {fileID: 1872102457}
   - component: {fileID: 1872102456}
   - component: {fileID: 1872102455}
+  - component: {fileID: 1872102458}
   m_Layer: 5
   m_Name: PeopleButton
   m_TagString: Untagged
@@ -12563,6 +12790,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1872102458}
+        m_TargetAssemblyTypeName: MenuButtonThemeSelector, Assembly-CSharp
+        m_MethodName: SetCardsTheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1698544716}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -12579,18 +12818,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 519420030}
-        m_TargetAssemblyTypeName: AdsLoader, Assembly-CSharp
-        m_MethodName: ShowAds
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12637,6 +12864,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872102453}
   m_CullTransparentMesh: 1
+--- !u!114 &1872102458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872102453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba56d4a15b81844bdbc8b226ebc700a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 334460401}
+  myTheme: 4
 --- !u!1 &1881816859
 GameObject:
   m_ObjectHideFlags: 0
@@ -13164,6 +13405,7 @@ GameObject:
   - component: {fileID: 1960857042}
   - component: {fileID: 1960857041}
   - component: {fileID: 1960857040}
+  - component: {fileID: 1960857044}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -13287,6 +13529,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960857038}
   m_CullTransparentMesh: 1
+--- !u!114 &1960857044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960857038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db71b1128fc7d4b3b8dac7e95ca3bab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 0
 --- !u!1 &1966413339
 GameObject:
   m_ObjectHideFlags: 0
