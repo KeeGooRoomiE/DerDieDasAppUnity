@@ -33,6 +33,8 @@ public class CardSetupManager : MonoBehaviour
 
     public void SetCard()
     {
+        ChangeLevelRandom();
+
         var cardSelectAnswer = 0;
         var cardTippText = "";
         var cardSound = game.musicSource.clip;
@@ -138,24 +140,35 @@ public class CardSetupManager : MonoBehaviour
 
     public void ChangeLevelRandom()
     {
-        //TOFIX:
+        //Just a reminder of categories of flashcards:
+        //
+        // FAVS - 0
+        // TIME - 1
+        // HEALTH - 2
+        //
         //currentWordNumber = UnityEngine.Random.Range(0, 8);
+        //
         Debug.Log("//TIME A1 CARDS POOL IS " + cards.timeA1.Length + " ELEMENTS");
         Debug.Log("//HEALTH A1 CARDS POOL IS " + cards.healthA1.Length + " ELEMENTS");
 
         switch (selectedTheme)
         {
-            default: currentWordNumber = 0; break;
-            case 0:
-                if (selectedLevel == 0)
-                {
-                    currentWordNumber = UnityEngine.Random.Range(0, cards.timeA1.Length);   
-                }
-                break;
+            default: currentWordNumber = 0;
+                Debug.Log("//USED DEBUG 0 VALUE FOR SOME REASON TO PREVENT ERROR..."); break;
             case 1:
                 if (selectedLevel == 0)
                 {
+                    Debug.Log("//SELECTED CATEGORY IS TIME A1");
+                    currentWordNumber = UnityEngine.Random.Range(0, cards.timeA1.Length);
+                    Debug.Log("//SELECTED CARD IS "+currentWordNumber+" OF "+cards.timeA1.Length);
+                }
+                break;
+            case 2:
+                if (selectedLevel == 0)
+                {
+                    Debug.Log("//SELECTED CATEGORY IS HEALTH A1");
                     currentWordNumber = UnityEngine.Random.Range(0, cards.healthA1.Length);
+                    Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.healthA1.Length);
                 }
                 break;
         }
