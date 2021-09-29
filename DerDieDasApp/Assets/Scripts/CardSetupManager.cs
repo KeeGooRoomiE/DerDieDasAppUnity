@@ -43,7 +43,8 @@ public class CardSetupManager : MonoBehaviour
         {
             case 0: //favourites
                     game.targetImage.sprite = cards.fav[currentWordNumber].image;
-                    cardSelectAnswer = cards.fav[currentWordNumber].rightAnswer;
+                    game.cardName.text = cards.fav[currentWordNumber].cardName;
+                cardSelectAnswer = cards.fav[currentWordNumber].rightAnswer;
                     cardTippText = cards.fav[currentWordNumber].tippText;
                     cardSound = cards.fav[currentWordNumber].sound;
                     cardFavIsOn = cards.fav[currentWordNumber].isFav;
@@ -52,6 +53,7 @@ public class CardSetupManager : MonoBehaviour
                 if (selectedLevel == 0) //A1
                 {
                     game.targetImage.sprite = cards.timeA1[currentWordNumber].image;
+                    game.cardName.text = cards.timeA1[currentWordNumber].cardName;
                     cardSelectAnswer = cards.timeA1[currentWordNumber].rightAnswer;
                     cardTippText = cards.timeA1[currentWordNumber].tippText;
                     cardSound = cards.timeA1[currentWordNumber].sound;
@@ -59,6 +61,7 @@ public class CardSetupManager : MonoBehaviour
                 } else if (selectedLevel == 1)  //A2
                 {
                     game.targetImage.sprite = cards.timeA2[currentWordNumber].image;
+                    game.cardName.text = cards.timeA2[currentWordNumber].cardName;
                     cardSelectAnswer = cards.timeA2[currentWordNumber].rightAnswer;
                     cardTippText = cards.timeA2[currentWordNumber].tippText;
                     cardSound = cards.timeA2[currentWordNumber].sound;
@@ -69,6 +72,7 @@ public class CardSetupManager : MonoBehaviour
                 if (selectedLevel == 0) //A1
                 {
                     game.targetImage.sprite = cards.healthA1[currentWordNumber].image;
+                    game.cardName.text = cards.healthA1[currentWordNumber].cardName;
                     cardSelectAnswer = cards.healthA1[currentWordNumber].rightAnswer;
                     cardTippText = cards.healthA1[currentWordNumber].tippText;
                     cardSound = cards.healthA1[currentWordNumber].sound;
@@ -77,6 +81,7 @@ public class CardSetupManager : MonoBehaviour
                 else if (selectedLevel == 1)    //A2
                 {
                     game.targetImage.sprite = cards.healthA2[currentWordNumber].image;
+                    game.cardName.text = cards.healthA2[currentWordNumber].cardName;
                     cardSelectAnswer = cards.healthA2[currentWordNumber].rightAnswer;
                     cardTippText = cards.healthA2[currentWordNumber].tippText;
                     cardSound = cards.healthA2[currentWordNumber].sound;

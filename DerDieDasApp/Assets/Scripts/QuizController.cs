@@ -10,6 +10,7 @@ public class QuizController : MonoBehaviour
     public Image trueStateImage;
     public Slider progressBarSlider;
     public Image targetImage;
+    public TextMeshProUGUI cardName;
     public AnswerButtonState derButton;
     public AnswerButtonState dieButton;
     public AnswerButtonState dasButton;

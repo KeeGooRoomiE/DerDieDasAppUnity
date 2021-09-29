@@ -34,7 +34,7 @@ public class FlashcardsManager : MonoBehaviour
 public class favCards
 {
     public int cardId;
-    public int cardName;
+    public string cardName;
     public int rightAnswer;  //1,2,3
     public bool isFav;
     public string tippText = "";
@@ -46,7 +46,7 @@ public class favCards
 public class timeCardsA1
 {
     public int cardId;
-    public int cardName;
+    public string cardName;
     public int rightAnswer;  //1,2,3
     public bool isFav;
     public string tippText = "";
@@ -58,7 +58,7 @@ public class timeCardsA1
 public class timeCardsA2
 {
     public int cardId;
-    public int cardName;
+    public string cardName;
     public int rightAnswer;  //1,2,3
     public bool isFav;
     public string tippText = "";
@@ -70,7 +70,7 @@ public class timeCardsA2
 public class healthCardsA1
 {
     public int cardId;
-    public int cardName;
+    public string cardName;
     public int rightAnswer;  //1,2,3
     public bool isFav;
     public string tippText = "";
@@ -82,7 +82,7 @@ public class healthCardsA1
 public class healthCardsA2
 {
     public int cardId;
-    public int cardName;
+    public string cardName;
     public int rightAnswer;  //1,2,3
     public bool isFav;
     public string tippText = "";
