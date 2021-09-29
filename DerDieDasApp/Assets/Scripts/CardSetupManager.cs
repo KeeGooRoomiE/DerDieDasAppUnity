@@ -139,14 +139,19 @@ public class CardSetupManager : MonoBehaviour
     public void ChangeLevelRandom()
     {
         //TOFIX:
-        currentWordNumber = UnityEngine.Random.Range(0, 2);
-
-        /*switch (selectedTheme)
+        //currentWordNumber = UnityEngine.Random.Range(0, 8);
+        switch (selectedTheme)
         {
             default: currentWordNumber = 0; break;
-            case 0: currentWordNumber = UnityEngine.Random.Range(0,cards.time.Length); break;
-            case 1: currentWordNumber = UnityEngine.Random.Range(0, cards.health.Length); break;
-        }*/
+            case 0: if (selectedLevel == 0)
+                    {
+                        currentWordNumber = UnityEngine.Random.Range(0, cards.timeA1.Length);
+                    } break;
+            case 1: if (selectedLevel == 0)
+                    {
+                        currentWordNumber = UnityEngine.Random.Range(0, cards.healthA1.Length);
+                    } break;
+        }
     }
 
     public void SwitchFavouriteToggle()
