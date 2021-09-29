@@ -2700,7 +2700,7 @@ MonoBehaviour:
   falseStateImage: {fileID: 476234140}
   trueStateImage: {fileID: 2093075163}
   progressBarSlider: {fileID: 1736726771}
-  targetImage: {fileID: 598907259}
+  targetImage: {fileID: 142903507}
   derButton: {fileID: 1994349063}
   dieButton: {fileID: 479738479}
   dasButton: {fileID: 1992767097}
@@ -2763,19 +2763,19 @@ MonoBehaviour:
     sound: {fileID: 0}
   healthA1:
   - cardId: 3
-    rightAnswer: 0
+    rightAnswer: 3
     isFav: 0
     tippText: 'Tipp: now is empty'
     image: {fileID: 21300000, guid: 89845377fb4914a3b83aa692b84c4e26, type: 3}
     sound: {fileID: 8300000, guid: 455ca457e3c40491fbeb11a9245fdfc6, type: 3}
   - cardId: 4
-    rightAnswer: 0
+    rightAnswer: 3
     isFav: 0
     tippText: 'Tipp: now is empty'
     image: {fileID: 21300000, guid: 85ec5c1144b6343d5a265c1c6960a05d, type: 3}
     sound: {fileID: 8300000, guid: a0dbbe74e3ac944d7a51f9ac5af0916e, type: 3}
   - cardId: 5
-    rightAnswer: 0
+    rightAnswer: 3
     isFav: 0
     tippText: 'Tipp: now is empty'
     image: {fileID: 21300000, guid: eb739ff5c9edd490f82067be6a58c869, type: 3}
@@ -5283,8 +5283,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 334460401}
-        m_TargetAssemblyTypeName: WordRotationController, Assembly-CSharp
-        m_MethodName: IncrementLevel
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: ChangeLevelRandom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5307,8 +5307,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 334460401}
-        m_TargetAssemblyTypeName: WordRotationController, Assembly-CSharp
-        m_MethodName: SetLevel
+        m_TargetAssemblyTypeName: CardSetupManager, Assembly-CSharp
+        m_MethodName: SetCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
