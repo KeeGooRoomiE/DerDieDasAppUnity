@@ -26,9 +26,7 @@ public class QuizController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        progressBarCounter = 0f;
-        progressBarSlider.value = progressBarCounter;
-        progressBarSlider.maxValue = progressBarModifier;
+        RestartProgress();
     }
 
     public void setAnswer(bool isRight)
@@ -61,6 +59,14 @@ public class QuizController : MonoBehaviour
     {
         progressBarSlider.value = progressBarCounter;
     }
+
+    public void RestartProgress()
+    {
+        progressBarCounter = 0f;
+        progressBarSlider.value = progressBarCounter;
+        progressBarSlider.maxValue = progressBarModifier;
+    }
+
 
     public void IncrementProgress()
     {

@@ -140,17 +140,24 @@ public class CardSetupManager : MonoBehaviour
     {
         //TOFIX:
         //currentWordNumber = UnityEngine.Random.Range(0, 8);
+        Debug.Log("//TIME A1 CARDS POOL IS " + cards.timeA1.Length + " ELEMENTS");
+        Debug.Log("//HEALTH A1 CARDS POOL IS " + cards.healthA1.Length + " ELEMENTS");
+
         switch (selectedTheme)
         {
             default: currentWordNumber = 0; break;
-            case 0: if (selectedLevel == 0)
-                    {
-                        currentWordNumber = UnityEngine.Random.Range(0, cards.timeA1.Length);
-                    } break;
-            case 1: if (selectedLevel == 0)
-                    {
-                        currentWordNumber = UnityEngine.Random.Range(0, cards.healthA1.Length);
-                    } break;
+            case 0:
+                if (selectedLevel == 0)
+                {
+                    currentWordNumber = UnityEngine.Random.Range(0, cards.timeA1.Length);   
+                }
+                break;
+            case 1:
+                if (selectedLevel == 0)
+                {
+                    currentWordNumber = UnityEngine.Random.Range(0, cards.healthA1.Length);
+                }
+                break;
         }
     }
 
