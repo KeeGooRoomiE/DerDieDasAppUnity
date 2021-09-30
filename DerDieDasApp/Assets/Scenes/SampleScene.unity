@@ -3076,6 +3076,35 @@ MonoBehaviour:
     tippText: 'Tipp: now is empty'
     image: {fileID: 21300000, guid: 1923437e0f4b2413eb0534ca498ed6ba, type: 3}
     sound: {fileID: 8300000, guid: 0cd17410b48e14e4eaefd45c6d60a4b3, type: 3}
+  homeA1:
+  - cardId: 45
+    cardName: Apartment
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: f3f892c0d1e694c569b21def6b7a010b, type: 3}
+    sound: {fileID: 8300000, guid: ba2a59127abdb407f937daf6f3a24d88, type: 3}
+  - cardId: 46
+    cardName: Bad
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: ca661d62b3e804116bd07e3b9f433890, type: 3}
+    sound: {fileID: 8300000, guid: 9a2279b5e0e8c47f6a0ef48746646244, type: 3}
+  - cardId: 47
+    cardName: Bett
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 92c26c6d34b4c4466a791b723185332d, type: 3}
+    sound: {fileID: 8300000, guid: 34af8a25a316a4bba90e40dac405aec9, type: 3}
+  - cardId: 48
+    cardName: Haus
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: e8989ba9c74eb44aebcd11f7d38615bc, type: 3}
+    sound: {fileID: 8300000, guid: 3306d6bd211814b8dabfc529e649f6f2, type: 3}
 --- !u!114 &334460401
 MonoBehaviour:
   m_ObjectHideFlags: 0

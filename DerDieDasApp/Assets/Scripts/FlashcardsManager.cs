@@ -12,7 +12,8 @@ public class FlashcardsManager : MonoBehaviour
     [SerializeField] public healthCardsA2[] healthA2;
     [SerializeField] public transportCardsA1[] transportA1;
     [SerializeField] public clothesCardsA1[] clothesA1;
-    [SerializeField] public foodndrinksA1[] foodA1;
+    [SerializeField] public foodndrinksCardsA1[] foodA1;
+    [SerializeField] public homeCardsA1[] homeA1;
 
     private void Awake()
     {
@@ -118,7 +119,19 @@ public class clothesCardsA1
 }
 
 [Serializable]
-public class foodndrinksA1
+public class foodndrinksCardsA1
+{
+    public int cardId;
+    public string cardName;
+    public int rightAnswer;  //1,2,3
+    public bool isFav;
+    public string tippText = "";
+    public Sprite image;
+    public AudioClip sound;
+}
+
+[Serializable]
+public class homeCardsA1
 {
     public int cardId;
     public string cardName;
