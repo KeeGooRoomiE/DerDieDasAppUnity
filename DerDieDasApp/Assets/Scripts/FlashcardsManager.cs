@@ -10,6 +10,7 @@ public class FlashcardsManager : MonoBehaviour
     [SerializeField] public timeCardsA2[] timeA2;
     [SerializeField] public healthCardsA1[] healthA1;
     [SerializeField] public healthCardsA2[] healthA2;
+    [SerializeField] public transportCardsA1[] transportA1;
 
     private void Awake()
     {
@@ -90,3 +91,14 @@ public class healthCardsA2
     public AudioClip sound;
 }
 
+[Serializable]
+public class transportCardsA1
+{
+    public int cardId;
+    public string cardName;
+    public int rightAnswer;  //1,2,3
+    public bool isFav;
+    public string tippText = "";
+    public Sprite image;
+    public AudioClip sound;
+}

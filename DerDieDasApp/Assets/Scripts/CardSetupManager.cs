@@ -90,6 +90,17 @@ public class CardSetupManager : MonoBehaviour
                     cardFavIsOn = cards.healthA2[currentWordNumber].isFav;
                 }
                 break;
+            case 7: //transport
+                if (selectedLevel == 0) //A1
+                {
+                    game.targetImage.sprite = cards.transportA1[currentWordNumber].image;
+                    game.cardName.text = cards.transportA1[currentWordNumber].cardName;
+                    cardSelectAnswer = cards.transportA1[currentWordNumber].rightAnswer;
+                    cardTippText = cards.transportA1[currentWordNumber].tippText;
+                    cardSound = cards.transportA1[currentWordNumber].sound;
+                    cardFavIsOn = cards.transportA1[currentWordNumber].isFav;
+                }
+                break;
         }
         #endregion
 
@@ -150,6 +161,7 @@ public class CardSetupManager : MonoBehaviour
         //
         Debug.Log("//TIME A1 CARDS POOL IS " + cards.timeA1.Length + " ELEMENTS");
         Debug.Log("//HEALTH A1 CARDS POOL IS " + cards.healthA1.Length + " ELEMENTS");
+        Debug.Log("//TRANSPORT A1 CARDS POOL IS " + cards.transportA1.Length + " ELEMENTS");
 
         switch (selectedTheme)
         {
@@ -169,6 +181,14 @@ public class CardSetupManager : MonoBehaviour
                     Debug.Log("//SELECTED CATEGORY IS HEALTH A1");
                     currentWordNumber = UnityEngine.Random.Range(0, cards.healthA1.Length);
                     Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.healthA1.Length);
+                }
+                break;
+            case 7:
+                if (selectedLevel == 0)
+                {
+                    Debug.Log("//SELECTED CATEGORY IS TRANSPORT A1");
+                    currentWordNumber = UnityEngine.Random.Range(0, cards.transportA1.Length);
+                    Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.transportA1.Length);
                 }
                 break;
         }

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1440
     height: 802
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 342}
   m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
-  controlID: 127
+  controlID: 54
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 128
+  controlID: 55
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 129
+  controlID: 56
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,8 +245,8 @@ MonoBehaviour:
     y: 481
     width: 1100
     height: 271
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
@@ -341,7 +341,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 388
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -374,25 +374,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 64430000
-      m_LastClickedID: 17252
-      m_ExpandedIDs: 40fbffff064000003c40000088400000a0400000be400000fe400000204100006c410000cc41000032420000404200009a420000bc420000564300005e43000070430000e2430000e843000074440000
+      m_SelectedIDs: 98400000
+      m_LastClickedID: 16536
+      m_ExpandedIDs: 40fbffff16400000284000004c40000098400000d04000001041000034410000824100009a410000d2410000e44100005a420000b8420000d2420000da4200005043000074430000a0440000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: GameScreen
-        m_OriginalName: GameScreen
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 17252
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -436,9 +436,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 937.842, y: 609.69714, z: -114.54764}
+    m_Target: {x: -0.51879215, y: 878.9509, z: -212.94588}
     speed: 2
-    m_Value: {x: 937.842, y: 609.69714, z: -114.54764}
+    m_Value: {x: -0.51879215, y: 878.9509, z: -212.94588}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -489,9 +489,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 926.6907
+    m_Target: 1063.2721
     speed: 2
-    m_Value: 926.6907
+    m_Value: 1063.2721
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -643,22 +643,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/CardImages/healthFlashcards
+    - Assets/Images
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/CardImages/healthFlashcards
+  - Assets/Images
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/xandergusarov/Documents/GitHub/DerDieDasAppUnity/DerDieDasApp
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 14}
-    m_SelectedIDs: fa450000
-    m_LastClickedID: 17914
-    m_ExpandedIDs: 00000000a6450000c0450000c8450000
+    scrollPos: {x: 0, y: 40.000427}
+    m_SelectedIDs: 70460000
+    m_LastClickedID: 18032
+    m_ExpandedIDs: 00000000b6450000b84500006c46000070460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -674,7 +674,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -686,7 +686,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a6450000
+    m_ExpandedIDs: 00000000b6450000b8450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -711,8 +711,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: f4400000
+    m_LastClickedInstanceID: 16628
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
