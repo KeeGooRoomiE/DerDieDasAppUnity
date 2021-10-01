@@ -28,7 +28,8 @@ public class CardSetupManager : MonoBehaviour
         Debug.Log("//WEATHER A1 CARDS POOL IS " + cards.weatherA1.Length + " ELEMENTS");        //Category 8
         Debug.Log("//HOME A1 CARDS POOL IS " + cards.homeA1.Length + " ELEMENTS");              //Category 9
         Debug.Log("//FOOD&DRINKS A1 CARDS POOL IS " + cards.foodA1.Length + " ELEMENTS");       //Category 10
-        Debug.Log("//NATIONS A1 CARDS POOL IS " + cards.nationsA1.Length + " ELEMENTS");       //Category 11
+        Debug.Log("//NATIONS A1 CARDS POOL IS " + cards.nationsA1.Length + " ELEMENTS");        //Category 11
+        Debug.Log("//UNITS A1 CARDS POOL IS " + cards.unitsA1.Length + " ELEMENTS");            //Category 12
 
     }
 
@@ -178,6 +179,17 @@ public class CardSetupManager : MonoBehaviour
                     cardFavIsOn = cards.nationsA1[currentWordNumber].isFav;
                 }
                 break;
+            case 12: //units
+                if (selectedLevel == 0) //A1
+                {
+                    game.targetImage.sprite = cards.unitsA1[currentWordNumber].image;
+                    game.cardName.text = cards.unitsA1[currentWordNumber].cardName;
+                    cardSelectAnswer = cards.unitsA1[currentWordNumber].rightAnswer;
+                    cardTippText = cards.unitsA1[currentWordNumber].tippText;
+                    cardSound = cards.unitsA1[currentWordNumber].sound;
+                    cardFavIsOn = cards.unitsA1[currentWordNumber].isFav;
+                }
+                break;
         }
         #endregion
 
@@ -311,6 +323,14 @@ public class CardSetupManager : MonoBehaviour
                     Debug.Log("//SELECTED CATEGORY IS NATIONS A1");
                     currentWordNumber = UnityEngine.Random.Range(0, cards.nationsA1.Length);
                     Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.nationsA1.Length);
+                }
+                break;
+            case 12:
+                if (selectedLevel == 0)
+                {
+                    Debug.Log("//SELECTED CATEGORY IS UNITS A1");
+                    currentWordNumber = UnityEngine.Random.Range(0, cards.unitsA1.Length);
+                    Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.unitsA1.Length);
                 }
                 break;
         }
