@@ -27,7 +27,8 @@ public class CardSetupManager : MonoBehaviour
         Debug.Log("//TRANSPORT A1 CARDS POOL IS " + cards.transportA1.Length + " ELEMENTS");    //Category 7
         Debug.Log("//HOME A1 CARDS POOL IS " + cards.homeA1.Length + " ELEMENTS");              //Category 9
         Debug.Log("//FOOD&DRINKS A1 CARDS POOL IS " + cards.foodA1.Length + " ELEMENTS");       //Category 10
-        
+        Debug.Log("//NATIONS A1 CARDS POOL IS " + cards.nationsA1.Length + " ELEMENTS");       //Category 11
+
     }
 
     /*
@@ -154,6 +155,17 @@ public class CardSetupManager : MonoBehaviour
                     cardFavIsOn = cards.foodA1[currentWordNumber].isFav;
                 }
                 break;
+            case 11: //nations
+                if (selectedLevel == 0) //A1
+                {
+                    game.targetImage.sprite = cards.nationsA1[currentWordNumber].image;
+                    game.cardName.text = cards.nationsA1[currentWordNumber].cardName;
+                    cardSelectAnswer = cards.nationsA1[currentWordNumber].rightAnswer;
+                    cardTippText = cards.nationsA1[currentWordNumber].tippText;
+                    cardSound = cards.nationsA1[currentWordNumber].sound;
+                    cardFavIsOn = cards.nationsA1[currentWordNumber].isFav;
+                }
+                break;
         }
         #endregion
 
@@ -271,6 +283,14 @@ public class CardSetupManager : MonoBehaviour
                     Debug.Log("//SELECTED CATEGORY IS FOOD&DRINKS A1");
                     currentWordNumber = UnityEngine.Random.Range(0, cards.foodA1.Length);
                     Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.foodA1.Length);
+                }
+                break;
+            case 11:
+                if (selectedLevel == 0)
+                {
+                    Debug.Log("//SELECTED CATEGORY IS NATIONS A1");
+                    currentWordNumber = UnityEngine.Random.Range(0, cards.nationsA1.Length);
+                    Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.nationsA1.Length);
                 }
                 break;
         }
