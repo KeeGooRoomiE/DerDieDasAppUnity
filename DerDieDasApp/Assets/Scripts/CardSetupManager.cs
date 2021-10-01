@@ -25,6 +25,7 @@ public class CardSetupManager : MonoBehaviour
         Debug.Log("//PLACES A1 CARDS POOL IS " + cards.placesA1.Length + " ELEMENTS");          //Category 5
         Debug.Log("//CLOTHES A1 CARDS POOL IS " + cards.clothesA1.Length + " ELEMENTS");        //Category 6
         Debug.Log("//TRANSPORT A1 CARDS POOL IS " + cards.transportA1.Length + " ELEMENTS");    //Category 7
+        Debug.Log("//WEATHER A1 CARDS POOL IS " + cards.weatherA1.Length + " ELEMENTS");        //Category 8
         Debug.Log("//HOME A1 CARDS POOL IS " + cards.homeA1.Length + " ELEMENTS");              //Category 9
         Debug.Log("//FOOD&DRINKS A1 CARDS POOL IS " + cards.foodA1.Length + " ELEMENTS");       //Category 10
         Debug.Log("//NATIONS A1 CARDS POOL IS " + cards.nationsA1.Length + " ELEMENTS");       //Category 11
@@ -131,6 +132,17 @@ public class CardSetupManager : MonoBehaviour
                     cardTippText = cards.transportA1[currentWordNumber].tippText;
                     cardSound = cards.transportA1[currentWordNumber].sound;
                     cardFavIsOn = cards.transportA1[currentWordNumber].isFav;
+                }
+                break;
+            case 8: //weather
+                if (selectedLevel == 0) //A1
+                {
+                    game.targetImage.sprite = cards.weatherA1[currentWordNumber].image;
+                    game.cardName.text = cards.weatherA1[currentWordNumber].cardName;
+                    cardSelectAnswer = cards.weatherA1[currentWordNumber].rightAnswer;
+                    cardTippText = cards.weatherA1[currentWordNumber].tippText;
+                    cardSound = cards.weatherA1[currentWordNumber].sound;
+                    cardFavIsOn = cards.weatherA1[currentWordNumber].isFav;
                 }
                 break;
             case 9: //home
@@ -267,6 +279,14 @@ public class CardSetupManager : MonoBehaviour
                     Debug.Log("//SELECTED CATEGORY IS TRANSPORT A1");
                     currentWordNumber = UnityEngine.Random.Range(0, cards.transportA1.Length);
                     Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.transportA1.Length);
+                }
+                break;
+            case 8:
+                if (selectedLevel == 0)
+                {
+                    Debug.Log("//SELECTED CATEGORY IS WEATHER A1");
+                    currentWordNumber = UnityEngine.Random.Range(0, cards.weatherA1.Length);
+                    Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.weatherA1.Length);
                 }
                 break;
             case 9:
