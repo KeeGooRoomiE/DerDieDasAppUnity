@@ -3105,6 +3105,104 @@ MonoBehaviour:
     tippText: 'Tipp: now is empty'
     image: {fileID: 21300000, guid: e8989ba9c74eb44aebcd11f7d38615bc, type: 3}
     sound: {fileID: 8300000, guid: 3306d6bd211814b8dabfc529e649f6f2, type: 3}
+  - cardId: 49
+    cardName: "Mo\u0308bel"
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 675c85fccd9cb479d986c03373da03a8, type: 3}
+    sound: {fileID: 8300000, guid: 20eb891b210ee4e4fbb59177489dd450, type: 3}
+  - cardId: 50
+    cardName: Sofa
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: be693f9604fb94465affa2d61141701b, type: 3}
+    sound: {fileID: 8300000, guid: 09bd7fcfe20784bc098ddcc8ff343ced, type: 3}
+  - cardId: 51
+    cardName: Balkon
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: eaf71fa543e484ffe9e32df98f3337ce, type: 3}
+    sound: {fileID: 8300000, guid: 1a81967a1b27d4a53a2a0bb5113c7017, type: 3}
+  - cardId: 52
+    cardName: Herd
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: bad650f68be5f425a82662a3099cdab8, type: 3}
+    sound: {fileID: 8300000, guid: dd31cf51b8d774d86956e10d47eef2f0, type: 3}
+  - cardId: 53
+    cardName: Zimmer
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: e5b9c4f4cdb2d4b6883a329c24a8b1e4, type: 3}
+    sound: {fileID: 8300000, guid: c50010bdefb914fc7aeb774a2a1b1061, type: 3}
+  - cardId: 54
+    cardName: "Ku\u0308hlschrank"
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 1341375f5bc574d6f90ff0747662ebe3, type: 3}
+    sound: {fileID: 8300000, guid: 06332fb62bea44f20ba9a598df51754a, type: 3}
+  - cardId: 55
+    cardName: Raum
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 8b59b377ef04646819909c00bd15aba4, type: 3}
+    sound: {fileID: 8300000, guid: ced8f0cbd0205489e990e9e9bf22ee9e, type: 3}
+  - cardId: 56
+    cardName: Schrank
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 2024ccb300a4243e7878a5639be1fa0e, type: 3}
+    sound: {fileID: 8300000, guid: 62cd56447a2a7466ca21bd9ae568639d, type: 3}
+  - cardId: 57
+    cardName: Tisch
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: be2c532e39b824532895a8c14fa28839, type: 3}
+    sound: {fileID: 8300000, guid: 4a2fd86ce083f4834ac07755651414cb, type: 3}
+  - cardId: 58
+    cardName: "Ku\u0308che"
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: bb347186d246e4530bbcd266a54d5ee8, type: 3}
+    sound: {fileID: 8300000, guid: 5d43e28d5f2d24ef3ae573bd0f1e3451, type: 3}
+  - cardId: 59
+    cardName: Miete
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 5548232fcec3646aa8532b5674e42922, type: 3}
+    sound: {fileID: 8300000, guid: 73c5fe66d786945e39f5159ee0103678, type: 3}
+  - cardId: 60
+    cardName: Toilette
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 5276d39ee3be6474cbe58d4fb1c0a863, type: 3}
+    sound: {fileID: 8300000, guid: 1e2bba7cad5d243568e09c4fde683a02, type: 3}
+  - cardId: 61
+    cardName: Treppe
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: bd92c00d26a32469bb04d2cbf5fa3bd4, type: 3}
+    sound: {fileID: 8300000, guid: 3335120b62c864718826739f2e560944, type: 3}
+  - cardId: 62
+    cardName: Wohnung
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: ecbdfb2257d4b4f16a300db016213ea3, type: 3}
+    sound: {fileID: 8300000, guid: db715995ec58543bc96fc8a2e0b11749, type: 3}
 --- !u!114 &334460401
 MonoBehaviour:
   m_ObjectHideFlags: 0

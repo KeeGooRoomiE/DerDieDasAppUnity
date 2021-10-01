@@ -20,11 +20,14 @@ public class CardSetupManager : MonoBehaviour
     {
         SetLevel();
 
-        Debug.Log("//TIME A1 CARDS POOL IS " + cards.timeA1.Length + " ELEMENTS");
-        Debug.Log("//HEALTH A1 CARDS POOL IS " + cards.healthA1.Length + " ELEMENTS");
-        Debug.Log("//TRANSPORT A1 CARDS POOL IS " + cards.transportA1.Length + " ELEMENTS");
-        Debug.Log("//CLOTHES A1 CARDS POOL IS " + cards.clothesA1.Length + " ELEMENTS");
-        Debug.Log("//FOOD&DRINKS A1 CARDS POOL IS " + cards.foodA1.Length + " ELEMENTS");
+        Debug.Log("//TIME A1 CARDS POOL IS " + cards.timeA1.Length + " ELEMENTS");              //Category 1
+        Debug.Log("//HEALTH A1 CARDS POOL IS " + cards.healthA1.Length + " ELEMENTS");          //Category 2
+        Debug.Log("//PLACES A1 CARDS POOL IS " + cards.placesA1.Length + " ELEMENTS");          //Category 5
+        Debug.Log("//CLOTHES A1 CARDS POOL IS " + cards.clothesA1.Length + " ELEMENTS");        //Category 6
+        Debug.Log("//TRANSPORT A1 CARDS POOL IS " + cards.transportA1.Length + " ELEMENTS");    //Category 7
+        Debug.Log("//HOME A1 CARDS POOL IS " + cards.homeA1.Length + " ELEMENTS");              //Category 9
+        Debug.Log("//FOOD&DRINKS A1 CARDS POOL IS " + cards.foodA1.Length + " ELEMENTS");       //Category 10
+        
     }
 
     /*
@@ -96,6 +99,17 @@ public class CardSetupManager : MonoBehaviour
                     cardFavIsOn = cards.healthA2[currentWordNumber].isFav;
                 }
                 break;
+            case 5: //places
+                if (selectedLevel == 0) //A1
+                {
+                    game.targetImage.sprite = cards.placesA1[currentWordNumber].image;
+                    game.cardName.text = cards.placesA1[currentWordNumber].cardName;
+                    cardSelectAnswer = cards.placesA1[currentWordNumber].rightAnswer;
+                    cardTippText = cards.placesA1[currentWordNumber].tippText;
+                    cardSound = cards.placesA1[currentWordNumber].sound;
+                    cardFavIsOn = cards.placesA1[currentWordNumber].isFav;
+                }
+                break;
             case 6: //clothes
                 if (selectedLevel == 0) //A1
                 {
@@ -116,6 +130,17 @@ public class CardSetupManager : MonoBehaviour
                     cardTippText = cards.transportA1[currentWordNumber].tippText;
                     cardSound = cards.transportA1[currentWordNumber].sound;
                     cardFavIsOn = cards.transportA1[currentWordNumber].isFav;
+                }
+                break;
+            case 9: //home
+                if (selectedLevel == 0) //A1
+                {
+                    game.targetImage.sprite = cards.homeA1[currentWordNumber].image;
+                    game.cardName.text = cards.homeA1[currentWordNumber].cardName;
+                    cardSelectAnswer = cards.homeA1[currentWordNumber].rightAnswer;
+                    cardTippText = cards.homeA1[currentWordNumber].tippText;
+                    cardSound = cards.homeA1[currentWordNumber].sound;
+                    cardFavIsOn = cards.homeA1[currentWordNumber].isFav;
                 }
                 break;
             case 10: //food & drinks
@@ -208,6 +233,14 @@ public class CardSetupManager : MonoBehaviour
                     Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.healthA1.Length);
                 }
                 break;
+            case 5:
+                if (selectedLevel == 0)
+                {
+                    Debug.Log("//SELECTED CATEGORY IS PLACES A1");
+                    currentWordNumber = UnityEngine.Random.Range(0, cards.placesA1.Length);
+                    Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.placesA1.Length);
+                }
+                break;
             case 6:
                 if (selectedLevel == 0)
                 {
@@ -222,6 +255,14 @@ public class CardSetupManager : MonoBehaviour
                     Debug.Log("//SELECTED CATEGORY IS TRANSPORT A1");
                     currentWordNumber = UnityEngine.Random.Range(0, cards.transportA1.Length);
                     Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.transportA1.Length);
+                }
+                break;
+            case 9:
+                if (selectedLevel == 0)
+                {
+                    Debug.Log("//SELECTED CATEGORY IS HOME A1");
+                    currentWordNumber = UnityEngine.Random.Range(0, cards.homeA1.Length);
+                    Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.homeA1.Length);
                 }
                 break;
             case 10:
