@@ -2991,6 +2991,20 @@ MonoBehaviour:
     tippText: 'Tipp: now is empty'
     image: {fileID: 21300000, guid: 789e59c4b84ca4b128179ae618d2bef7, type: 3}
     sound: {fileID: 8300000, guid: f9c4236e5faec4e3d85593c5b486f29d, type: 3}
+  - cardId: 63
+    cardName: Jacke
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: b63bf7cfae19b44d281d2b7d50aed0c2, type: 3}
+    sound: {fileID: 8300000, guid: e4571a1284cb84493b6f37dde53a800d, type: 3}
+  - cardId: 64
+    cardName: Kleidung
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 843fe20e3de3349bfb85150057bdbd94, type: 3}
+    sound: {fileID: 8300000, guid: 17e4af3befbba4c8ea5f04fcecfcaee5, type: 3}
   foodA1:
   - cardId: 33
     cardName: "O\u0308l"
@@ -3203,6 +3217,231 @@ MonoBehaviour:
     tippText: 'Tipp: now is empty'
     image: {fileID: 21300000, guid: ecbdfb2257d4b4f16a300db016213ea3, type: 3}
     sound: {fileID: 8300000, guid: db715995ec58543bc96fc8a2e0b11749, type: 3}
+  placesA1:
+  - cardId: 65
+    cardName: Cafe
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: ed719580a31da4e3993e408faaa3fc5d, type: 3}
+    sound: {fileID: 8300000, guid: e1ea0fc2004394739b2fe5286d8cc07b, type: 3}
+  - cardId: 66
+    cardName: Dorf
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 16805a0a3f8c8499b947f23d0550a5e5, type: 3}
+    sound: {fileID: 8300000, guid: f1d01149008894190b3323ad353e31b9, type: 3}
+  - cardId: 67
+    cardName: "Gescha\u0308ft"
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: fa9e71e83dcd14f3e9f98f08dae2725e, type: 3}
+    sound: {fileID: 8300000, guid: f3cafbadd69d8452db198cf2ef8249e4, type: 3}
+  - cardId: 68
+    cardName: Hotel
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: f7b3e7c9350f6428e924d91434a03399, type: 3}
+    sound: {fileID: 8300000, guid: e89bbb68af9f340c48f6a64775e9bf64, type: 3}
+  - cardId: 69
+    cardName: Kino
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 3d8d2aa0412ff473983047e20e4a5d3b, type: 3}
+    sound: {fileID: 8300000, guid: 9a7b8e57338b44e6eafe4c4b00f88055, type: 3}
+  - cardId: 70
+    cardName: Lokal
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 07495baa32cb34c83b85b5efdb58b27b, type: 3}
+    sound: {fileID: 8300000, guid: 9e9d32c51bceb441496130790a28d71e, type: 3}
+  - cardId: 71
+    cardName: Meer
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 00a9aaa874fa543718756792f8607427, type: 3}
+    sound: {fileID: 8300000, guid: 5eb728600407d40eea2e02f485742b74, type: 3}
+  - cardId: 72
+    cardName: "Reisebu\u0308ro"
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 40d38d82b805c43a6ba973c9525a9e65, type: 3}
+    sound: {fileID: 8300000, guid: 9e74d971ff25e44e398cb3c4520cb89c, type: 3}
+  - cardId: 73
+    cardName: Restaurant
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: dba7f59ceac5e4aa29a40d772e1c4806, type: 3}
+    sound: {fileID: 8300000, guid: 388775c2c37814281940b7ffb16cecdb, type: 3}
+  - cardId: 74
+    cardName: Schwimmbad
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 18cae28ca431644a6947c9885ba81992, type: 3}
+    sound: {fileID: 8300000, guid: 036128a46f73c4c88934ed23e5578c08, type: 3}
+  - cardId: 75
+    cardName: Arbeitsplatz
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 8c06ce1d0578647ec9c8b3283a8c4d9e, type: 3}
+    sound: {fileID: 8300000, guid: 89ed75e4520824751b60067c8f8a3fe6, type: 3}
+  - cardId: 76
+    cardName: Bahnhof
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: e2a00f32ba1b745979f7fd8f134dc757, type: 3}
+    sound: {fileID: 8300000, guid: 6e807f8d421e540ebb08e37a3032d36d, type: 3}
+  - cardId: 77
+    cardName: Eingang
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 458f2bacccb544224954eb3c1a6d6231, type: 3}
+    sound: {fileID: 8300000, guid: 137e20774a8224f66893a76665e8e441, type: 3}
+  - cardId: 78
+    cardName: Flughafen
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 3f62060ba0ef14cfd91bc90670ea691a, type: 3}
+    sound: {fileID: 8300000, guid: 8792b85f736bd4120a7fbc91dc69b460, type: 3}
+  - cardId: 79
+    cardName: Garten
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: b1c7c109f274745f683984e47c53e9aa, type: 3}
+    sound: {fileID: 8300000, guid: 3bdb67db0dda749528c33ad09e0cef56, type: 3}
+  - cardId: 80
+    cardName: Kindergarten
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 1f50e4b94794d4a57b2ac3d7c2cf2f48, type: 3}
+    sound: {fileID: 8300000, guid: 538e3a6aff5074f148aec9210bfb3f5a, type: 3}
+  - cardId: 81
+    cardName: Kiosk
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: e1706400ef98b4a6f9fad6a7f4c9b5e7, type: 3}
+    sound: {fileID: 8300000, guid: 348d1d92b534f49a097ba6b2f91dc855, type: 3}
+  - cardId: 82
+    cardName: Laden
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 882b96fa8ef2d4f76960729ea422408b, type: 3}
+    sound: {fileID: 8300000, guid: 808d08e42cc23489a918eb6243e6b29a, type: 3}
+  - cardId: 83
+    cardName: Ort
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 828de95c3c5ba4680a886b3d67af3e3f, type: 3}
+    sound: {fileID: 8300000, guid: df5d823eae2a147419a66f484edf56c5, type: 3}
+  - cardId: 84
+    cardName: Platz
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 11b56d6372099450ea6e34ab251c7046, type: 3}
+    sound: {fileID: 8300000, guid: 5013752f3abac402189942e47073316f, type: 3}
+  - cardId: 85
+    cardName: See
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 9c722cbe8aa1d4c92af2eca894b8a0fc, type: 3}
+    sound: {fileID: 8300000, guid: b12d2528f232f46dc9bde38cc80572ca, type: 3}
+  - cardId: 86
+    cardName: Autobahn
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: a1db31307b6a5487fafe260f64c85cb4, type: 3}
+    sound: {fileID: 8300000, guid: 5c7777e77a8a04fd2802c04a797adfcb, type: 3}
+  - cardId: 87
+    cardName: Bank
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 11aa98196b76245b89481eb70eaee798, type: 3}
+    sound: {fileID: 8300000, guid: b0f4775725ec946b295ab93d02905af8, type: 3}
+  - cardId: 88
+    cardName: "Ba\u0308ckerei"
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 36fa0efc6293f4619a485edd8c465ae3, type: 3}
+    sound: {fileID: 8300000, guid: 59a520a2d0307442bbffbcd1b68fbd7c, type: 3}
+  - cardId: 89
+    cardName: Halle
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 03980ed56c72545f189936f5ed208ca5, type: 3}
+    sound: {fileID: 8300000, guid: 19db2d3209bf845808e17a6dd574943b, type: 3}
+  - cardId: 90
+    cardName: Haltestelle
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 61fbf0500863d49cfa9ff02ea622e3e5, type: 3}
+    sound: {fileID: 8300000, guid: 884b504efb2b04c149f5582d066aae6e, type: 3}
+  - cardId: 91
+    cardName: Polizei
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 43cdaa8fc57734086a87eb8b4bce7cbf, type: 3}
+    sound: {fileID: 8300000, guid: 9ed9d1e7cdebd4fd0b4193449a610d1e, type: 3}
+  - cardId: 92
+    cardName: Praxis
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: dfd730cb68d3c4962896d0e311552eed, type: 3}
+    sound: {fileID: 8300000, guid: 854fbf8b6aad14ad2aa560f50d19c897, type: 3}
+  - cardId: 93
+    cardName: Rezeption
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 9cc0d1c2557524431be5d6e4a34f4514, type: 3}
+    sound: {fileID: 8300000, guid: 552b093ee8d97476cb118cce81a202e1, type: 3}
+  - cardId: 94
+    cardName: Schule
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 1a54f4066441d40e78c752402d14e52d, type: 3}
+    sound: {fileID: 8300000, guid: 548d373db2eec43098235b35b26a8680, type: 3}
+  - cardId: 95
+    cardName: "Sehenswu\u0308rdigkeit "
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: cb9d4b42cfc594b26a750d4b819e8be0, type: 3}
+    sound: {fileID: 8300000, guid: 8e19d3e2554924af398cbc69557cd9d3, type: 3}
+  - cardId: 96
+    cardName: Stadt
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 9a680404a415e4f0cbae812cfe7aef19, type: 3}
+    sound: {fileID: 8300000, guid: c5d5f18f0a50844c0b178536a104c37e, type: 3}
 --- !u!114 &334460401
 MonoBehaviour:
   m_ObjectHideFlags: 0
