@@ -48,10 +48,10 @@ public class QuizController : MonoBehaviour
     {
         trueStateImage.color = new Color(1.0f, 1.0f, 1.0f, 0f);
         falseStateImage.color = new Color(1.0f, 1.0f, 1.0f, 0f);
-        tippText.enabled = false;
         tippButton.interactable = true;
         tippButton.isOn = false;
         favButton.isOn = false;
+        tippText.enabled = false;
         nextQuizButton.interactable = false;
     }
 

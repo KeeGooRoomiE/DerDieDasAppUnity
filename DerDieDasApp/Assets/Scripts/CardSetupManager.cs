@@ -18,7 +18,7 @@ public class CardSetupManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetLevel();
+        //SetLevel();
 
         Debug.Log("//TIME A1 CARDS POOL IS " + cards.timeA1.Length + " ELEMENTS");              //Category 1
         Debug.Log("//HEALTH A1 CARDS POOL IS " + cards.healthA1.Length + " ELEMENTS");          //Category 2
@@ -231,11 +231,14 @@ public class CardSetupManager : MonoBehaviour
         #region //--set card favourite sign
         game.favButton.isOn = cardFavIsOn;
         #endregion
+
+        //autostart sound when open card
+        StartCardSound();
     }
 
-    private void SetLevel()
+    private void StartCardSound()
     {
-
+        game.musicSource.Play();
     }
 
     public void ChangeLevelRandom()
