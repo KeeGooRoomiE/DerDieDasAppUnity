@@ -13,6 +13,8 @@ public class CardSetupManager : MonoBehaviour
     [SerializeField] public int selectedTheme;
     [SerializeField] private int currentWordNumber;
     [SerializeField] private bool cardFavIsOn;
+    [SerializeField] private bool favListNotEmpty;
+    [SerializeField] private int maxFilledFavNumber;
 
 
     // Start is called before the first frame update
@@ -31,6 +33,17 @@ public class CardSetupManager : MonoBehaviour
         Debug.Log("//NATIONS A1 CARDS POOL IS " + cards.nationsA1.Length + " ELEMENTS");        //Category 11
         Debug.Log("//UNITS A1 CARDS POOL IS " + cards.unitsA1.Length + " ELEMENTS");            //Category 12
 
+        for (var o=0; o<cards.fav.Length; o++)
+        {
+            cards.fav[o].cardId = -1;
+            cards.fav[o].cardName = "Add some words to favorites list";
+            cards.fav[o].rightAnswer = 0;
+            cards.fav[o].isFav = true;
+            cards.fav[o].tippText = "Tipp: To add a word, use star button";
+            cards.fav[o].image = cards.nationsA1[2].image;
+            cards.fav[o].sound = cards.nationsA1[2].sound;
+            cards.fav[o].isEmpty = true;
+        }
     }
 
     /*
@@ -256,6 +269,18 @@ public class CardSetupManager : MonoBehaviour
         {
             default: currentWordNumber = 0;
                 Debug.Log("//USED DEBUG 0 VALUE FOR SOME REASON TO PREVENT ERROR..."); break;
+            case 0:
+                //currentWordNumber = UnityEngine.Random.Range(0, cards.fav.Length);
+
+                if (favListNotEmpty == true) {
+                    currentWordNumber = UnityEngine.Random.Range(0, maxFilledFavNumber);
+                } else
+                {
+                    Debug.Log("FAV LIST IS EMPTY");
+                    currentWordNumber = 0;
+                }
+                Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF FAVS LIST");
+                break;
             case 1:
                 if (selectedLevel == 0)
                 {
@@ -341,18 +366,212 @@ public class CardSetupManager : MonoBehaviour
 
     public void SwitchFavouriteToggle()
     {
-        cardFavIsOn = game.favButton.isOn;
-        if (cardFavIsOn == true)
+        if (selectedTheme > 0)
         {
-            MakeFavouritesList();
+            cardFavIsOn = game.favButton.isOn;
+            if (cardFavIsOn == true)
+            {
+                favListNotEmpty = true;
+                MakeFavouritesList();
+                //} else
+                //{
+                //    var sourceId = 0;
+                //    switch (selectedTheme)
+                //    {
+                //        case 1: sourceId = cards.timeA1[currentWordNumber].cardId; break;
+                //        case 2: sourceId = cards.healthA1[currentWordNumber].cardId; break;
+                //        case 5: sourceId = cards.placesA1[currentWordNumber].cardId; break;
+                //        case 6: sourceId = cards.clothesA1[currentWordNumber].cardId; break;
+                //        case 7: sourceId = cards.transportA1[currentWordNumber].cardId; break;
+                //        case 8: sourceId = cards.weatherA1[currentWordNumber].cardId; break;
+                //        case 9: sourceId = cards.homeA1[currentWordNumber].cardId; break;
+                //        case 10: sourceId = cards.foodA1[currentWordNumber].cardId; break;
+                //        case 11: sourceId = cards.nationsA1[currentWordNumber].cardId; break;
+                //        case 12: sourceId = cards.unitsA1[currentWordNumber].cardId; break;
+                //    }
+
+                //    for (var p=0; p<cards.fav.Length; p++)
+                //    {
+                //        if (cards.fav[p].cardId == sourceId)
+                //        {
+                //            //ClearFavValue(p);
+                //        }
+                //    }
+            }
         }
     }
 
     public void MakeFavouritesList()
     {
-        Debug.Log("//CREATING FAV LIST...");
-        //WIP
-        Debug.Log("//FAV LIST UPDATED");
+        var n = 0;
+        var found = false;
+        var c = currentWordNumber;
+
+        var ccid = 0;
+        var ccn = "";
+        var cca = 0;
+        var ctt = "";
+        var ci = cards.timeA1[0].image;
+        var cs = cards.timeA1[0].sound;
+
+        //set changable values for next step
+        switch (selectedTheme)
+        {
+            case 0: Debug.Log("Man, youre trying to edit theme wich you are using... its ok?"); break;
+            case 1: //time
+                if (selectedLevel == 0)
+                {
+                    ccid = cards.timeA1[c].cardId;
+                    ccn = cards.timeA1[c].cardName;
+                    cca = cards.timeA1[c].rightAnswer;
+                    ctt = cards.timeA1[c].tippText;
+                    ci = cards.timeA1[c].image;
+                    cs = cards.timeA1[c].sound;
+                }
+                break;
+            case 2: //health
+                if (selectedLevel == 0)
+                {
+                    ccid = cards.healthA1[c].cardId;
+                    ccn = cards.healthA1[c].cardName;
+                    cca = cards.healthA1[c].rightAnswer;
+                    ctt = cards.healthA1[c].tippText;
+                    ci = cards.healthA1[c].image;
+                    cs = cards.healthA1[c].sound;
+                }
+                break;
+            case 5:         //places
+                if (selectedLevel == 0)
+                {
+                    ccid = cards.placesA1[c].cardId;
+                    ccn = cards.placesA1[c].cardName;
+                    cca = cards.placesA1[c].rightAnswer;
+                    ctt = cards.placesA1[c].tippText;
+                    ci = cards.placesA1[c].image;
+                    cs = cards.placesA1[c].sound;
+                }
+                break;
+            case 6:         //clothes
+                if (selectedLevel == 0)
+                {
+                    ccid = cards.clothesA1[c].cardId;
+                    ccn = cards.clothesA1[c].cardName;
+                    cca = cards.clothesA1[c].rightAnswer;
+                    ctt = cards.clothesA1[c].tippText;
+                    ci = cards.clothesA1[c].image;
+                    cs = cards.clothesA1[c].sound;
+                }
+                break;
+            case 7:         //transport
+                if (selectedLevel == 0)
+                {
+                    ccid = cards.transportA1[c].cardId;
+                    ccn = cards.transportA1[c].cardName;
+                    cca = cards.transportA1[c].rightAnswer;
+                    ctt = cards.transportA1[c].tippText;
+                    ci = cards.transportA1[c].image;
+                    cs = cards.transportA1[c].sound;
+                }
+                break;
+            case 8:         //weather
+                if (selectedLevel == 0)
+                {
+                    ccid = cards.weatherA1[c].cardId;
+                    ccn = cards.weatherA1[c].cardName;
+                    cca = cards.weatherA1[c].rightAnswer;
+                    ctt = cards.weatherA1[c].tippText;
+                    ci = cards.weatherA1[c].image;
+                    cs = cards.weatherA1[c].sound;
+                }
+                break;
+            case 9:         //home
+                if (selectedLevel == 0)
+                {
+                    ccid = cards.homeA1[c].cardId;
+                    ccn = cards.homeA1[c].cardName;
+                    cca = cards.homeA1[c].rightAnswer;
+                    ctt = cards.homeA1[c].tippText;
+                    ci = cards.homeA1[c].image;
+                    cs = cards.homeA1[c].sound;
+                }
+                break;
+            case 10:         //food
+                if (selectedLevel == 0)
+                {
+                    ccid = cards.foodA1[c].cardId;
+                    ccn = cards.foodA1[c].cardName;
+                    cca = cards.foodA1[c].rightAnswer;
+                    ctt = cards.foodA1[c].tippText;
+                    ci = cards.foodA1[c].image;
+                    cs = cards.foodA1[c].sound;
+                }
+                break;
+            case 11:         //nations
+                if (selectedLevel == 0)
+                {
+                    ccid = cards.nationsA1[c].cardId;
+                    ccn = cards.nationsA1[c].cardName;
+                    cca = cards.nationsA1[c].rightAnswer;
+                    ctt = cards.nationsA1[c].tippText;
+                    ci = cards.nationsA1[c].image;
+                    cs = cards.nationsA1[c].sound;
+                }
+                break;
+            case 12:         //units
+                if (selectedLevel == 0)
+                {
+                    ccid = cards.unitsA1[c].cardId;
+                    ccn = cards.unitsA1[c].cardName;
+                    cca = cards.unitsA1[c].rightAnswer;
+                    ctt = cards.unitsA1[c].tippText;
+                    ci = cards.unitsA1[c].image;
+                    cs = cards.unitsA1[c].sound;
+                }
+                break;
+        }
+
+        //check for existing value
+        if (found == false)
+        {
+            for (var j = 0; j < cards.fav.Length; j++)
+            {
+                if (cards.fav[j].isEmpty == true)
+                {
+                    n = j;
+                    found = true;
+                    break;
+                }
+            }
+        }
+        if (found == true)
+        {
+            SetFavValue(n, ccid, ccn, cca, ctt, ci, cs);
+            maxFilledFavNumber = n;
+        }
+    }
+
+private void ClearFavValue(int number)
+    {
+        cards.fav[number].cardId = -1;
+        cards.fav[number].cardName = "Add some words to favorites list";
+        cards.fav[number].rightAnswer = 0;
+        cards.fav[number].isFav = true;
+        cards.fav[number].tippText = "Tipp: To add a word, use star button";
+        cards.fav[number].image = cards.nationsA1[2].image;
+        cards.fav[number].sound = cards.nationsA1[2].sound;
+        cards.fav[number].isEmpty = true;
+    }
+
+    private void SetFavValue(int n, int ccid, string ccn, int cca, string ctt, Sprite ci, AudioClip cs)
+    {
+        cards.fav[n].cardId = ccid;
+        cards.fav[n].cardName = ccn;
+        cards.fav[n].rightAnswer = cca;
+        cards.fav[n].isFav = true;
+        cards.fav[n].tippText = ctt;
+        cards.fav[n].image = ci;
+        cards.fav[n].sound = cs;
+        cards.fav[n].isEmpty = false;
     }
 }
 

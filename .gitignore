@@ -82,3 +82,7 @@ DerDieDasApp/Library/SceneVisibilityState.asset
 DerDieDasApp/Library/SourceAssetDB
 DerDieDasApp/ProjectSettings/ProjectSettings.asset
 DerDieDasApp/Library/SourceAssetDB
+DerDieDasApp/Library/ArtifactDB
+DerDieDasApp/Library/
+DerDieDasApp/Library/PlayerDataCache/Android/Data/sharedassets0.assets
+*.assets
