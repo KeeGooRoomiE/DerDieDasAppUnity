@@ -24,6 +24,7 @@ public class CardSetupManager : MonoBehaviour
 
         Debug.Log("//TIME A1 CARDS POOL IS " + cards.timeA1.Length + " ELEMENTS");              //Category 1
         Debug.Log("//HEALTH A1 CARDS POOL IS " + cards.healthA1.Length + " ELEMENTS");          //Category 2
+        Debug.Log("//PEOPLES A1 CARDS POOL IS " + cards.peoplesA1.Length + " ELEMENTS");          //Category 4
         Debug.Log("//PLACES A1 CARDS POOL IS " + cards.placesA1.Length + " ELEMENTS");          //Category 5
         Debug.Log("//CLOTHES A1 CARDS POOL IS " + cards.clothesA1.Length + " ELEMENTS");        //Category 6
         Debug.Log("//TRANSPORT A1 CARDS POOL IS " + cards.transportA1.Length + " ELEMENTS");    //Category 7
@@ -113,6 +114,17 @@ public class CardSetupManager : MonoBehaviour
                     cardTippText = cards.healthA2[currentWordNumber].tippText;
                     cardSound = cards.healthA2[currentWordNumber].sound;
                     cardFavIsOn = cards.healthA2[currentWordNumber].isFav;
+                }
+                break;
+            case 4: //peoples
+                if (selectedLevel == 0) //A1
+                {
+                    game.targetImage.sprite = cards.peoplesA1[currentWordNumber].image;
+                    game.cardName.text = cards.peoplesA1[currentWordNumber].cardName;
+                    cardSelectAnswer = cards.peoplesA1[currentWordNumber].rightAnswer;
+                    cardTippText = cards.peoplesA1[currentWordNumber].tippText;
+                    cardSound = cards.peoplesA1[currentWordNumber].sound;
+                    cardFavIsOn = cards.peoplesA1[currentWordNumber].isFav;
                 }
                 break;
             case 5: //places
@@ -297,6 +309,14 @@ public class CardSetupManager : MonoBehaviour
                     Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.healthA1.Length);
                 }
                 break;
+            case 4:
+                if (selectedLevel == 0)
+                {
+                    Debug.Log("//SELECTED CATEGORY IS PEOPLES A1");
+                    currentWordNumber = UnityEngine.Random.Range(0, cards.peoplesA1.Length);
+                    Debug.Log("//SELECTED CARD IS " + currentWordNumber + " OF " + cards.peoplesA1.Length);
+                }
+                break;
             case 5:
                 if (selectedLevel == 0)
                 {
@@ -438,6 +458,17 @@ public class CardSetupManager : MonoBehaviour
                     ctt = cards.healthA1[c].tippText;
                     ci = cards.healthA1[c].image;
                     cs = cards.healthA1[c].sound;
+                }
+                break;
+            case 4:         //peoples
+                if (selectedLevel == 0)
+                {
+                    ccid = cards.peoplesA1[c].cardId;
+                    ccn = cards.peoplesA1[c].cardName;
+                    cca = cards.peoplesA1[c].rightAnswer;
+                    ctt = cards.peoplesA1[c].tippText;
+                    ci = cards.peoplesA1[c].image;
+                    cs = cards.peoplesA1[c].sound;
                 }
                 break;
             case 5:         //places

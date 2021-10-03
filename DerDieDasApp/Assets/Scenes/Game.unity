@@ -157,10 +157,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 548, y: -1284.2106}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &37194787
 MonoBehaviour:
@@ -842,10 +842,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 184, y: -192.21057}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &146673740
 MonoBehaviour:
@@ -3291,7 +3291,7 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: fe73bc17763d54032933297208117e3b, type: 3}
     sound: {fileID: 8300000, guid: c626e4ee50b734e7cb56dd18ccb43439, type: 3}
   - cardId: 17
-    cardName: Kopf
+    cardName: Hand
     rightAnswer: 2
     isFav: 0
     tippText: 'Tipp: now is empty'
@@ -4013,6 +4013,259 @@ MonoBehaviour:
     tippText: 'Tipp: now is empty'
     image: {fileID: 21300000, guid: df2e5d356109847958304d8f38df8b9b, type: 3}
     sound: {fileID: 8300000, guid: 6b87e2f1e403a4e4d95575f06b0d5933, type: 3}
+  peoplesA1:
+  - cardId: 121
+    cardName: Baby
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 024cb862bc49e4d6883fc01041c82282, type: 3}
+    sound: {fileID: 8300000, guid: f28c9323dbc0e4f98aa3fbdd79ee88f2, type: 3}
+  - cardId: 122
+    cardName: "Ma\u0308dchen"
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 31167108469f64ddd81edeeefde83144, type: 3}
+    sound: {fileID: 8300000, guid: a3f888029a6ab422c84e34a5ebe75f01, type: 3}
+  - cardId: 123
+    cardName: "Ausla\u0308nder"
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: a8cbd68a18b3b4144a0c3664ee570186, type: 3}
+    sound: {fileID: 8300000, guid: d1cd0833fcceb4857b5bf8a715335862, type: 3}
+  - cardId: 124
+    cardName: Bruder
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 311a2b764cd4d4f2193123d56dcab8cf, type: 3}
+    sound: {fileID: 8300000, guid: d38f0a5cfb02f4d378fda0d547934336, type: 3}
+  - cardId: 125
+    cardName: Chef
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: c8868f27bc28b479283c80037e891fb3, type: 3}
+    sound: {fileID: 8300000, guid: cf6fa9e9750404c89b718de8cd69ebf6, type: 3}
+  - cardId: 126
+    cardName: Doktor
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 9c20d077ed5614635a59c2e3542c20ae, type: 3}
+    sound: {fileID: 8300000, guid: 3754dea7329fa42a7ad0b42cb40b85b5, type: 3}
+  - cardId: 127
+    cardName: Ehemann
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 364da4687b80d45e485812d90d3bd2b2, type: 3}
+    sound: {fileID: 8300000, guid: dcf0062b53cf9466a83478c63aaca8f0, type: 3}
+  - cardId: 128
+    cardName: Erwachsene
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: cb8c451cd9fb24e169cc85abb9bbdaa8, type: 3}
+    sound: {fileID: 8300000, guid: 96a8c11200b504f0aac14d2a19745092, type: 3}
+  - cardId: 129
+    cardName: Fahrer
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 01bbc294833f94aee88fd6139b82f5d5, type: 3}
+    sound: {fileID: 8300000, guid: 393b208ce67bd48e18c146c2f5faa3c4, type: 3}
+  - cardId: 130
+    cardName: Freund
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 201f33b5d84824b24976489e4625dd5c, type: 3}
+    sound: {fileID: 8300000, guid: 2f2da1427ebe44493bb960df44506e60, type: 3}
+  - cardId: 131
+    cardName: Herr
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 5b0db946c29cc405898b01d6c6a8c2c3, type: 3}
+    sound: {fileID: 8300000, guid: ab71d9f51018d46139dcee0896f28ce4, type: 3}
+  - cardId: 132
+    cardName: Jugendliche
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 5d525caa379a047ed940d3b9a1fad49e, type: 3}
+    sound: {fileID: 8300000, guid: a56cbb26d46544c0990718528078b35a, type: 3}
+  - cardId: 133
+    cardName: Junge
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: d89be3bcaa8b24ac9ba64ebe8d81d794, type: 3}
+    sound: {fileID: 8300000, guid: 0490cb974c3d34a859403dbacf607a40, type: 3}
+  - cardId: 134
+    cardName: Kunde
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 870c4bf4751214e9f99556a30e5b965a, type: 3}
+    sound: {fileID: 8300000, guid: 0c57849dd21a14dfbbd05d5f6250f657, type: 3}
+  - cardId: 135
+    cardName: Mann
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: c39832270da5041f3a2ce543330a52ac, type: 3}
+    sound: {fileID: 8300000, guid: 86c0275f4534d413a85766a1b0028909, type: 3}
+  - cardId: 136
+    cardName: Kunde
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 7022762df32044f1caee973efd8104db, type: 3}
+    sound: {fileID: 8300000, guid: 0c57849dd21a14dfbbd05d5f6250f657, type: 3}
+  - cardId: 137
+    cardName: Mensch
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: e8cc86fc999b04e588b7c1dffc258cf0, type: 3}
+    sound: {fileID: 8300000, guid: 18e96b0862ac4463b9bb01af232741f9, type: 3}
+  - cardId: 138
+    cardName: Opa
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: ef88fac935afd4a08bb4909a07a496a0, type: 3}
+    sound: {fileID: 8300000, guid: 1f0f5c6a3f35f4d16a576e0820c3be10, type: 3}
+  - cardId: 139
+    cardName: Partner
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 9b22fb7b04c8c46edbd34723e9022e4d, type: 3}
+    sound: {fileID: 8300000, guid: 007840e1569f24a1586e655be1f29155, type: 3}
+  - cardId: 140
+    cardName: "Schu\u0308ler"
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: c559a27d57d9c465698725ffd1832a3e, type: 3}
+    sound: {fileID: 8300000, guid: ccb78f59d09af4f6a89304b11f9dac81, type: 3}
+  - cardId: 141
+    cardName: Sohne
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 81efa6342f4894b13823a88c615423ce, type: 3}
+    sound: {fileID: 8300000, guid: 980d48b6ef77b40bd978d03eedf1d380, type: 3}
+  - cardId: 142
+    cardName: Vater
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 07170b698c61e487fb73c0b3e583b3f0, type: 3}
+    sound: {fileID: 8300000, guid: a1cf612ebe26042829271a2152ef3cab, type: 3}
+  - cardId: 143
+    cardName: Verwandte
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 443b96ed68e3c45d087e0b95312e87a4, type: 3}
+    sound: {fileID: 8300000, guid: e163a052867f14c0d8e6165c5be00a25, type: 3}
+  - cardId: 144
+    cardName: Dame
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: daf328c3123564f6bbd5144225de492f, type: 3}
+    sound: {fileID: 8300000, guid: d9d9aa0845cbd4b0ebb9dc6ee4816937, type: 3}
+  - cardId: 145
+    cardName: Ehefrau
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 0e65b2351b7024193a1d76c0a731d6da, type: 3}
+    sound: {fileID: 8300000, guid: e80c2f32ef2154083883bed4839cf2c8, type: 3}
+  - cardId: 146
+    cardName: Famillie
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 3ec9642288e0c47528c35507883704dc, type: 3}
+    sound: {fileID: 8300000, guid: b00eaab8a95cb4f559786a6365d634a2, type: 3}
+  - cardId: 147
+    cardName: Frau
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 69a489f2401644b4394eaa9666a93b85, type: 3}
+    sound: {fileID: 8300000, guid: 1716432519a9d40378b0a9c3a89f4b34, type: 3}
+  - cardId: 148
+    cardName: Freudin
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: a9800ecb1ee8e4d37acce971f48fc571, type: 3}
+    sound: {fileID: 8300000, guid: 3e5cd86aa0fc84f729f6bcc9163cc317, type: 3}
+  - cardId: 149
+    cardName: Leute
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: b16711ed61fd441c69f73ffd61a63b08, type: 3}
+    sound: {fileID: 8300000, guid: 572da9feaad0f41d5be3079d5906932c, type: 3}
+  - cardId: 150
+    cardName: Mutter
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 66f1db3b4cb274f7781d5728802ae0ca, type: 3}
+    sound: {fileID: 8300000, guid: 8276b8ae136264623ac91e625b825991, type: 3}
+  - cardId: 151
+    cardName: Oma
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 96e77ee00695c412281b094cb7e80c3d, type: 3}
+    sound: {fileID: 8300000, guid: ff53cb4d94d8e47cdaf2bc474633ca25, type: 3}
+  - cardId: 152
+    cardName: Partnerin
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 6aa04cc772560469eb5b6f19422d386b, type: 3}
+    sound: {fileID: 8300000, guid: bbc2927765bec4eceb4d28106c88637a, type: 3}
+  - cardId: 153
+    cardName: "Schu\u0308lerin"
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 8683040255e0243cbb31ddd2062a0db1, type: 3}
+    sound: {fileID: 8300000, guid: 23ce0d54b8f9447f984148710f111dc7, type: 3}
+  - cardId: 154
+    cardName: Schwester
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 7c0bb3118b9434ebf80a2b9128863fa6, type: 3}
+    sound: {fileID: 8300000, guid: 402fa01e86fcd4616bcab56ad3856421, type: 3}
+  - cardId: 155
+    cardName: Tochter
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 2d74a48f7c318423193e9826cb49ed11, type: 3}
+    sound: {fileID: 8300000, guid: 5c5bda0cb820b40fbb07ebe0b53240ac, type: 3}
+  - cardId: 157
+    cardName: Verwandte
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: baf2d7c93245f4db0af9db8b02e61eb4, type: 3}
+    sound: {fileID: 8300000, guid: 421eeae799cc346a1967055c82f7be4c, type: 3}
 --- !u!114 &334460401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5633,10 +5886,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 184, y: -1648.2106}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &580280985
 MonoBehaviour:
@@ -5947,10 +6200,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 184, y: -1284.2106}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &614134791
 MonoBehaviour:
@@ -7204,10 +7457,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 184, y: -2012.2106}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &853330896
 MonoBehaviour:
@@ -9117,10 +9370,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 548, y: -1648.2106}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1146204264
 MonoBehaviour:
@@ -9626,10 +9879,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 184, y: -556.2106}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248858668
 MonoBehaviour:
@@ -10145,10 +10398,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 548, y: -192.21057}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318300464
 MonoBehaviour:
@@ -13164,10 +13417,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 184, y: -2376.2104}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1726380461
 MonoBehaviour:
@@ -13605,10 +13858,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 548, y: -920.2106}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761916061
 MonoBehaviour:
@@ -14170,10 +14423,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 184, y: -920.2106}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781103364
 MonoBehaviour:
@@ -14450,10 +14703,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 548, y: -556.2106}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1872102455
 MonoBehaviour:
@@ -14645,10 +14898,10 @@ RectTransform:
   m_Father: {fileID: 1199470976}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 548, y: -2012.2106}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1874694355
 MonoBehaviour:
