@@ -19,8 +19,10 @@ public class QuizController : MonoBehaviour
     public Toggle favButton;
     public Button nextQuizButton;
     public AudioSource musicSource;
+    public GameObject popup;
     private float progressBarCounter;
     [SerializeField] private int progressBarModifier = 10;
+    private bool isPopupAppeared = false;
 
 
     // Start is called before the first frame update
@@ -67,6 +69,22 @@ public class QuizController : MonoBehaviour
         progressBarSlider.maxValue = progressBarModifier;
     }
 
+    public void Update()
+    {
+        if (progressBarSlider.value == progressBarSlider.maxValue)
+        {
+            if (isPopupAppeared == false)
+            {
+                popup.SetActive(true);
+                isPopupAppeared = true;
+            }
+        }
+    }
+
+    public void RestartPopup()
+    {
+        isPopupAppeared = false;
+    }
 
     public void IncrementProgress()
     {
