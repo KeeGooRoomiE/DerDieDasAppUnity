@@ -4283,6 +4283,161 @@ MonoBehaviour:
     tippText: 'Tipp: now is empty'
     image: {fileID: 21300000, guid: baf2d7c93245f4db0af9db8b02e61eb4, type: 3}
     sound: {fileID: 8300000, guid: 421eeae799cc346a1967055c82f7be4c, type: 3}
+  jobsA1:
+  - cardId: 158
+    cardName: "Gepa\u0308ck"
+    rightAnswer: 3
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: bd169cca3cc254e4d8dffcef4fae3a52, type: 3}
+    sound: {fileID: 8300000, guid: e336398a4fc174c188dcf2a1d374b408, type: 3}
+  - cardId: 159
+    cardName: Apotheker
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: bb67e4984ad1c4d339795de9b66405dd, type: 3}
+    sound: {fileID: 8300000, guid: 00630e442eb0e4477a4e8d164c931c69, type: 3}
+  - cardId: 160
+    cardName: Arzt
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 48f743eb47c594e30b770ba268474beb, type: 3}
+    sound: {fileID: 8300000, guid: 0159716f24bcf4f5ca144851393e1350, type: 3}
+  - cardId: 161
+    cardName: "Ba\u0308cker"
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 3d9720a1a71ac41aea0d455ff014a31d, type: 3}
+    sound: {fileID: 8300000, guid: c7d2fbdfdbed64e48ab3bab1b5e666c9, type: 3}
+  - cardId: 162
+    cardName: Beamte
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 3bc666cc8331043d38767f463d497e32, type: 3}
+    sound: {fileID: 8300000, guid: d9b1be355186547f7bd31a0ea499b13c, type: 3}
+  - cardId: 162
+    cardName: Beruf
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: b816bce13bd5b43cfb8efe76bceec616, type: 3}
+    sound: {fileID: 8300000, guid: 3622da63e805e4a4eb3a95377f6cf2c1, type: 3}
+  - cardId: 163
+    cardName: Hausmann
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 2ee792fb16ba144159664e2d15e80ed3, type: 3}
+    sound: {fileID: 8300000, guid: c76614995852444aba6e431d1126f6c7, type: 3}
+  - cardId: 164
+    cardName: Kollege
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: a70b80de5370a487fa3c30143d2f5ced, type: 3}
+    sound: {fileID: 8300000, guid: ba583f72dc0f444ff8953fc2b943d9c0, type: 3}
+  - cardId: 165
+    cardName: Lehrer
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 5401b79bbd40a43c19fc3e8481225a81, type: 3}
+    sound: {fileID: 8300000, guid: f0e1c5be6e7124d70b4c3e91c061b5fb, type: 3}
+  - cardId: 166
+    cardName: "Reisefu\u0308hrer"
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 9da471da969f14be4841329c88ffa5d7, type: 3}
+    sound: {fileID: 8300000, guid: 00bf30aa84bdc48e9a8fe891790b6da6, type: 3}
+  - cardId: 167
+    cardName: "Verka\u0308ufer"
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 097a677d77b104e3f8b0bb7b0422050c, type: 3}
+    sound: {fileID: 8300000, guid: ca857385672d844c9b5ec483d77e92a5, type: 3}
+  - cardId: 168
+    cardName: Vermieter
+    rightAnswer: 1
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: dbdecca0e95b941cc99f5df68878316b, type: 3}
+    sound: {fileID: 8300000, guid: 66c4faefb3dc24b9d802aa297a5d2c22, type: 3}
+  - cardId: 169
+    cardName: Apothekerin
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: ff88ad0610e814f46be34c78bb38df1e, type: 3}
+    sound: {fileID: 8300000, guid: bd8ee999f0ba549c38ab4d36b738edd1, type: 3}
+  - cardId: 170
+    cardName: "A\u0308rztin"
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 82bc6df3be5084a879fc26726a3b9bd9, type: 3}
+    sound: {fileID: 8300000, guid: ac744f3aed5684e29908ca44961f2aab, type: 3}
+  - cardId: 171
+    cardName: "Ba\u0308ckerin"
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 7626386ba36ed4b17b9546b97cd02b64, type: 3}
+    sound: {fileID: 8300000, guid: 2aeacbf0ec6474379a0ec5d53c43e4b6, type: 3}
+  - cardId: 172
+    cardName: Beamtin
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 3e1cecdf3b4724d45b17a952a46f5e8d, type: 3}
+    sound: {fileID: 8300000, guid: 755634770683140f6a2432836b48ee60, type: 3}
+  - cardId: 173
+    cardName: Hausfrau
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: a68e415220c9f4a1c8a73d1a1c5b7b20, type: 3}
+    sound: {fileID: 8300000, guid: 029c89750043a49b899109cd74e581a1, type: 3}
+  - cardId: 174
+    cardName: Kollegin
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 96a654d8315b146c7870c43d24325593, type: 3}
+    sound: {fileID: 8300000, guid: eca251db58d75472583e62311cf86b82, type: 3}
+  - cardId: 175
+    cardName: Lehrerin
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 09a34c5c20a9241ab8fa503a82f06711, type: 3}
+    sound: {fileID: 8300000, guid: 84fc5960af2d6471ba7c5f4ed79c656f, type: 3}
+  - cardId: 176
+    cardName: "Reisefu\u0308hrerin"
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 1607e299e2b324757853fe05f0083beb, type: 3}
+    sound: {fileID: 8300000, guid: baa5cf3b60d8545ffb90560a6ebf3c9f, type: 3}
+  - cardId: 177
+    cardName: "Verka\u0308uferin"
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: 79c28d153d4e94c2b99c9bb8465f3e13, type: 3}
+    sound: {fileID: 8300000, guid: 4cf477df49f0944478d28f4e99e6428d, type: 3}
+  - cardId: 178
+    cardName: Vermieterin
+    rightAnswer: 2
+    isFav: 0
+    tippText: 'Tipp: now is empty'
+    image: {fileID: 21300000, guid: cc50b309c768c431e8d0baec38bf6c11, type: 3}
+    sound: {fileID: 8300000, guid: 40ac408ed98334ba78215848d900d5b7, type: 3}
 --- !u!114 &334460401
 MonoBehaviour:
   m_ObjectHideFlags: 0

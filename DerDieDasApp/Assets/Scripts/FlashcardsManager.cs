@@ -19,6 +19,7 @@ public class FlashcardsManager : MonoBehaviour
     [SerializeField] public weatherCardsA1[] weatherA1;
     [SerializeField] public unitsCardsA1[] unitsA1;
     [SerializeField] public peopleCardsA1[] peoplesA1;
+    [SerializeField] public jobsCardsA1[] jobsA1;
 
     private void Awake()
     {
@@ -198,6 +199,18 @@ public class unitsCardsA1
 
 [Serializable]
 public class peopleCardsA1
+{
+    public int cardId;
+    public string cardName;
+    public int rightAnswer;  //1,2,3
+    public bool isFav;
+    public string tippText = "";
+    public Sprite image;
+    public AudioClip sound;
+}
+
+[Serializable]
+public class jobsCardsA1
 {
     public int cardId;
     public string cardName;
