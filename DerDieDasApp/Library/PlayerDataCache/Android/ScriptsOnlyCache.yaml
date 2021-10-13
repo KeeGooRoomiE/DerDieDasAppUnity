@@ -1,5 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - GoogleMobileAds.Editor.GoogleMobileAdsSettings
+    - GoogleMobileAds.Editor.GoogleMobileAdsSettingsEditor
     Assembly-CSharp.dll:
     - AdsLoader
     - AnswerButtonState
@@ -8,8 +11,22 @@ ScriptsOnlyBuild:
     - FlashcardsManager
     - MenuButtonThemeSelector
     - QuizController
+    - SA.CrossPlatform.Advertisement.UM_GoogleAdsSettings
+    - SettingsTransitionSelector
     - favToggleBehaviour
     - toggleSoundBehaviour
+    SA.Android.Editor.dll:
+    - SA.Android.Editor.AN_SettingsWindow
+    SA.Android.dll:
+    - SA.Android.AN_Settings
+    SA.CrossPlatform.Editor.dll:
+    - SA.CrossPlatform.Editor.UM_SettingsWindow
+    SA.CrossPlatform.dll:
+    - SA.CrossPlatform.UM_Settings
+    SA.iOS.XCode.dll:
+    - SA.iOS.XCode.ISD_Settings
+    SA.iOS.dll:
+    - SA.iOS.ISN_Settings
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -51,6 +68,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
@@ -78,6 +96,8 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 634}
+    - Class: 114
       Script: {instanceID: 1524}
     - Class: 114
       Script: {instanceID: 1636}
@@ -92,49 +112,65 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2104}
     - Class: 114
+      Script: {instanceID: 2112}
+    - Class: 114
       Script: {instanceID: 2208}
     - Class: 114
       Script: {instanceID: 2474}
     - Class: 114
       Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 2500}
     - Class: 114
-      Script: {instanceID: 2636}
+      Script: {instanceID: 2610}
     - Class: 114
-      Script: {instanceID: 2678}
+      Script: {instanceID: 2638}
     - Class: 114
-      Script: {instanceID: 2700}
+      Script: {instanceID: 2680}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2702}
     - Class: 114
       Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 3022}
+      Script: {instanceID: 2842}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 3024}
     - Class: 114
-      Script: {instanceID: 3462}
+      Script: {instanceID: 3046}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 3854}
+      Script: {instanceID: 3466}
     - Class: 114
-      Script: {instanceID: 3988}
+      Script: {instanceID: 3844}
     - Class: 114
-      Script: {instanceID: 4166}
+      Script: {instanceID: 3858}
     - Class: 114
-      Script: {instanceID: 4258}
+      Script: {instanceID: 3992}
     - Class: 114
-      Script: {instanceID: 4266}
+      Script: {instanceID: 4170}
     - Class: 114
-      Script: {instanceID: 4596}
+      Script: {instanceID: 4262}
     - Class: 114
-      Script: {instanceID: 5014}
+      Script: {instanceID: 4270}
     - Class: 114
-      Script: {instanceID: 24616}
+      Script: {instanceID: 4600}
+    - Class: 114
+      Script: {instanceID: 5018}
+    - Class: 114
+      Script: {instanceID: 21936}
+    - Class: 114
+      Script: {instanceID: 22464}
+    - Class: 114
+      Script: {instanceID: 22632}
+    - Class: 114
+      Script: {instanceID: 22640}
+    - Class: 114
+      Script: {instanceID: 25262}
+    - Class: 114
+      Script: {instanceID: 25428}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -304,6 +340,12 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
+      Hash: cb60d8df0107d21eb895303294c7cb7a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SettingsTransitionSelector
+  - hash:
+      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -416,6 +458,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 16a77befb4eb41e6307dfd1727a3d2af
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: favToggleBehaviour
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -562,7 +610,7 @@ ScriptsOnlyBuild:
     className: toggleSoundBehaviour
   - hash:
       serializedVersion: 2
-      Hash: 283563849bd0db27e1dc2528ffe5edc0
+      Hash: 80a63ca089142cdbd91937936d8d49e6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: QuizController
@@ -640,7 +688,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 2f877fe72e3e5a92d23427bcff9c25d9
+      Hash: 750255745541e606196cfe0ffdcf2df5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FlashcardsManager
@@ -718,11 +766,551 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   - hash:
       serializedVersion: 2
-      Hash: 16a77befb4eb41e6307dfd1727a3d2af
-    assemblyName: Assembly-CSharp.dll
+      Hash: 0c4b3b68abb0c267b0b194c3f90d3828
+    assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: 
-    className: favToggleBehaviour
+    className: UM_BuildInfoExample
+  - hash:
+      serializedVersion: 2
+      Hash: c78b411104f2e8719a799effeb66e0f8
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.CrossPlatform.Samples
+    className: UM_ContactsSample
+  - hash:
+      serializedVersion: 2
+      Hash: 95eeaf69fc397212e495e66562b22560
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_LocalNotificationsExample
+  - hash:
+      serializedVersion: 2
+      Hash: 5c8a9d892c9e394941c19ff3f4cd6934
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.CrossPlatform.Samples
+    className: UM_AchievmentsMetaView
+  - hash:
+      serializedVersion: 2
+      Hash: 2dce131c1c51d393680a1461e32c4f82
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.Android.Samples
+    className: AN_ProductView
+  - hash:
+      serializedVersion: 2
+      Hash: 83ea15cb97a2aac77126c85de6be5b67
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_TabbedContent
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.iOS.Examples
+    className: iCloudUseExample
+  - hash:
+      serializedVersion: 2
+      Hash: a4185db1841e8222faef5a97b2000ac0
+    assemblyName: SA.iOS.XCode.dll
+    namespaceName: SA.iOS.XCode
+    className: ISD_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 68d53748be0b3204da437e7a94455412
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.Foundation
+    className: TabsPanelViewUIController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.iOS.Examples
+    className: ISN_MarketExample
+  - hash:
+      serializedVersion: 2
+      Hash: 7c9694c3e32cc455923b3281aa89d7e2
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_DialogsExample
+  - hash:
+      serializedVersion: 2
+      Hash: f928e846b3de445e6ed1a1d6a905b5eb
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_PurchaseButton
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.dll
+    namespaceName: SA.iOS.ReplayKit
+    className: ISN_RPNativeAPI
+  - hash:
+      serializedVersion: 2
+      Hash: f180054379329fe005c13b4893b59678
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_ContactsEample
+  - hash:
+      serializedVersion: 2
+      Hash: fcdf57d5a3dc24940c982a070870180d
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_NotificationsExample
+  - hash:
+      serializedVersion: 2
+      Hash: bdce297ecd1d34e3055a852b99418f3b
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.CrossPlatform.Samples
+    className: UM_GameServiceSavedGamesExample
+  - hash:
+      serializedVersion: 2
+      Hash: 0562bcfad54d5ddbb6631cd92f119ca4
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: ASIdentifierManagerExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.iOS.Examples
+    className: ISN_UserNotificationExample
+  - hash:
+      serializedVersion: 2
+      Hash: b5068cd3b0a409e1bed23877f13e95e4
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: ISN_CameraGalleryExample
+  - hash:
+      serializedVersion: 2
+      Hash: db5c929aedd3c16ae6554ea46970de0c
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_SocialExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.iOS.Examples
+    className: AVKitUseExample
+  - hash:
+      serializedVersion: 2
+      Hash: 44f9b04974d4372da009be9b27fcf23a
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.Android.Samples
+    className: AN_VendingSample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_GeneralAppExample
+  - hash:
+      serializedVersion: 2
+      Hash: 389f1213753e072ca7f3efb299c89c82
+    assemblyName: SA.Foundation.dll
+    namespaceName: SA.Foundation.Animation
+    className: SA_ValuesTween
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.iOS.Examples
+    className: ISN_ReplayKitUseExample
+  - hash:
+      serializedVersion: 2
+      Hash: e6329c020e05aded6e5fed8f41ab0059
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.CrossPlatform.Samples
+    className: UM_WelcomeController
+  - hash:
+      serializedVersion: 2
+      Hash: a00c8865923e144627eb1f7b7b439229
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: ISN_MediaPlayerExample
+  - hash:
+      serializedVersion: 2
+      Hash: f9d02300d10183c8f21c2b80503f5d8f
+    assemblyName: SA.Android.dll
+    namespaceName: SA.Android
+    className: AN_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.XCode.dll
+    namespaceName: SA.iOS.XCode
+    className: ISD_LibHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 0ecbf6d5c0cec5c5da44d81cd437b4cf
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: ISN_EventKitExamples
+  - hash:
+      serializedVersion: 2
+      Hash: 400371129f367b179ecec10cdd0aab57
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_ContactsEampleView
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.iOS.Examples
+    className: ISN_UserNotificationsExamples
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.XCode.dll
+    namespaceName: SA.iOS.XCode
+    className: ISD_FrameworkHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.dll
+    namespaceName: SA.iOS.EventKit
+    className: ISN_EventKitNativeAPI
+  - hash:
+      serializedVersion: 2
+      Hash: 180edf2ac3a341a93034567ecb40e195
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_AdvertisementExample
+  - hash:
+      serializedVersion: 2
+      Hash: 56ac947bd759b5b6578dc5fb62f65a3b
+    assemblyName: SA.CrossPlatform.dll
+    namespaceName: SA.CrossPlatform
+    className: UM_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: fc5a4589a2c9fdb973bd15e968beceed
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_GMS_Snapshot_Example
+  - hash:
+      serializedVersion: 2
+      Hash: 4acd4b8825cf70f5252be9c0e346f310
+    assemblyName: SA.iOS.dll
+    namespaceName: SA.iOS
+    className: ISN_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 5c9f18d33ed4d0734614e603e3bd36e2
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: ISN_CoreLocationUseExample
+  - hash:
+      serializedVersion: 2
+      Hash: 729bfcaf62461c2b2a84846f31012cb8
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.CrossPlatform.Samples
+    className: UM_LeaderboardMetaView
+  - hash:
+      serializedVersion: 2
+      Hash: 57d9826a9ebcdbf57e298b9cda4cd3ff
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_DialogsExample
+  - hash:
+      serializedVersion: 2
+      Hash: 63005a24420b094282a643bcfff728d1
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: ISN_UIImagePickerControllerExample
+  - hash:
+      serializedVersion: 2
+      Hash: bd0e36d798ae4b83969232fb15fbef3c
+    assemblyName: SA.Facebook.dll
+    namespaceName: SA.Facebook
+    className: SA_FB_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 9a5b38693728536d441a5d7f595026cd
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_GMS_Achievements_Example
+  - hash:
+      serializedVersion: 2
+      Hash: d02e933fe219b450209f0bf9185361ec
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_GMS_Auth_Example
+  - hash:
+      serializedVersion: 2
+      Hash: f7dad9a2c204703f8cbfb77c0caf1121
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_GameServiceAuthExample
+  - hash:
+      serializedVersion: 2
+      Hash: 6a3cc04bdb74e61e595ce37add2f994c
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_SavaedGameMetaView
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.Foundation
+    className: ButtonPanelViewUIController
+  - hash:
+      serializedVersion: 2
+      Hash: fb925008e0d7e0ec972e611071bb09b2
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_GIF_Samples
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: ISN_AppdelegateUseExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.iOS.Examples
+    className: ISN_AppleSignInUseExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: StansAssets.Foundation.dll
+    namespaceName: StansAssets.Foundation.Async
+    className: GlobalCoroutine
+  - hash:
+      serializedVersion: 2
+      Hash: 8db9866df6e8a3601b79ec4a5d2ac271
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_AnalyticsUseExample
+  - hash:
+      serializedVersion: 2
+      Hash: b9b4679c3ae4288e39447434fc153029
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: ISN_SocialExamples
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_SceneLink
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.dll
+    namespaceName: SA.iOS.UserNotifications
+    className: ISN_UNNativeAPI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: StansAssets.Foundation.dll
+    namespaceName: StansAssets.Foundation.Async
+    className: MonoBehaviourCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 49d1216c56d7711b6bffd94da7c12a81
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_CameraAdGalleryExample
+  - hash:
+      serializedVersion: 2
+      Hash: 5cc754c4b8282d6fb06b1e8883308e2e
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_FirebaseSample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.iOS.Examples
+    className: ISN_BaseIOSFeaturePreview
+  - hash:
+      serializedVersion: 2
+      Hash: 0759297e71b64824fa5a93ebf80ee66c
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: FB_MessagingExample
+  - hash:
+      serializedVersion: 2
+      Hash: fb28c13d065f32e65da83806470a0cb2
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_InAppExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.dll
+    namespaceName: SA.iOS.AVFoundation.Internal
+    className: ISN_AVNativeAPI
+  - hash:
+      serializedVersion: 2
+      Hash: 406faee078a3741d6ddef03e8c24ebc7
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_CameraAndGalleryExample
+  - hash:
+      serializedVersion: 2
+      Hash: 02493766ba0d073bd9e5d602a5878d4f
+    assemblyName: SA.Foundation.dll
+    namespaceName: SA.Foundation.Animation
+    className: SA_iTween
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.dll
+    namespaceName: SA.iOS.Contacts.Internal
+    className: ISN_CNNativeAPI
+  - hash:
+      serializedVersion: 2
+      Hash: 111e8183cdc8aa953fa8af5f3a10b079
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_FB_Samples
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.iOS.Examples
+    className: GameKitUseExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_AppFeaturesExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.dll
+    namespaceName: SA.iOS.UIKit
+    className: ISN_UINativeAPI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.dll
+    namespaceName: SA.iOS.GameKit
+    className: ISN_GKNativeAPI
+  - hash:
+      serializedVersion: 2
+      Hash: 25be137eb077f8d24006791b97684060
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_SwitchScene
+  - hash:
+      serializedVersion: 2
+      Hash: 26da9937e0c3c1f5741b0faf5c1ed143
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: ISN_GameKitUseExample_TvOS
+  - hash:
+      serializedVersion: 2
+      Hash: 3b68f9e8ba9c8cb1372f2db51f884d5b
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_GMS_Leaderboards_Example
+  - hash:
+      serializedVersion: 2
+      Hash: 9bdf12a546ff73c42f0a667cbb785304
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.CrossPlatform.Samples
+    className: UM_GameServiceAchievmentsExample
+  - hash:
+      serializedVersion: 2
+      Hash: d02e933fe219b450209f0bf9185361ec
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: SA_FB_UseExample
+  - hash:
+      serializedVersion: 2
+      Hash: 7f3708d6ce7d76bbf063342bd50cfae6
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_MedialPlayerExample
+  - hash:
+      serializedVersion: 2
+      Hash: 7f68db3ead3c921056816a15f3b52cc8
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.iOS.Examples
+    className: ISN_UIKitExample
+  - hash:
+      serializedVersion: 2
+      Hash: 40e88b4c705c30957f580b6b43eedd40
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_StoreController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.dll
+    namespaceName: SA.iOS.Foundation
+    className: ISN_NSNativeAPI
+  - hash:
+      serializedVersion: 2
+      Hash: cb6dc94d12c14ea4cc45dee8113d4212
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.CrossPlatform.Samples
+    className: UM_GameServiceLeaderboardsExample
+  - hash:
+      serializedVersion: 2
+      Hash: 8df3342a0e9886292f72aa77106e54b7
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: SA.CrossPlatform.Samples
+    className: UM_GameserviceMultiplayerSample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.dll
+    namespaceName: SA.iOS.StoreKit
+    className: ISN_SKNativeAPI
+  - hash:
+      serializedVersion: 2
+      Hash: 18119d4c84b021e6f5000850ecad59fb
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_PermissionsExample
+  - hash:
+      serializedVersion: 2
+      Hash: a265610e8f38f6bbf3a32c081fe5d41a
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: UM_SharingExample
+  - hash:
+      serializedVersion: 2
+      Hash: 235c9bead21111a2f35f7727e1bf42c4
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AN_PlayVideoExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: DocumentationExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: SA.iOS.dll
+    namespaceName: SA.iOS.AVKit.Internal
+    className: ISN_AVKitNativeAPI
+  - hash:
+      serializedVersion: 2
+      Hash: 6fb512c6733e02f441372611e6f94f11
+    assemblyName: Assembly-CSharp-Editor.dll
+    namespaceName: GoogleMobileAds.Editor
+    className: GoogleMobileAdsSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleMobileAds.Common
+    className: MobileAdsEventExecutor
+  - hash:
+      serializedVersion: 2
+      Hash: c8d0ecd04130f5c4716931af88a56dbf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: SA.CrossPlatform.Advertisement
+    className: UM_GoogleAdsSettings
   platform: 13
   scenePathNames:
   - Assets/Scenes/Game.unity
-  playerPath: /Users/xandergusarov/Desktop/DDDFilledList.apk
+  playerPath: /Users/xandergusarov/Desktop/DDDFilledListAddsADs2.apk

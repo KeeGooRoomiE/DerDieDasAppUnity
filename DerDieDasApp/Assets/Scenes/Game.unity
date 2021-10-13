@@ -12009,7 +12009,7 @@ MonoBehaviour:
     m_Left: 0
     m_Right: 0
     m_Top: 0
-    m_Bottom: 0
+    m_Bottom: 64
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
@@ -12287,8 +12287,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 48
     m_Right: 48
-    m_Top: 32
-    m_Bottom: 0
+    m_Top: 72
+    m_Bottom: -16
   m_ChildAlignment: 0
   m_Spacing: 16
   m_ChildForceExpandWidth: 1

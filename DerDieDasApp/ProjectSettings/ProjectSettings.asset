@@ -745,7 +745,12 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: SA_ADMOB_INSTALLED
+    4: SA_ADMOB_INSTALLED
+    7: SA_ADMOB_INSTALLED
+    13: SA_ADMOB_INSTALLED
+    25: SA_ADMOB_INSTALLED
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

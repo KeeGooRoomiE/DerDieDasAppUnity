@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8057a8d1454a8db4d91a4c0ce8a5074a, type: 3}
+  m_Name: UM_GoogleAdsSettings
+  m_EditorClassIdentifier: 
+  LastVersionCode: 
+  AndroidIds:
+    AppId: ca-app-pub-5730952597017034~5802531684
+    BannerId: ca-app-pub-5730952597017034/5610959993
+    NonRewardedId: ca-app-pub-5730952597017034/1024013575
+    RewardedId: 
+  IOSIds:
+    AppId: ca-app-pub-5730952597017034~1883661494
+    BannerId: ca-app-pub-5730952597017034/1013432952
+    NonRewardedId: ca-app-pub-5730952597017034/7526870416
+    RewardedId: 
+  TestDevices:
+  - iPhone 11
+  Keywords: []
+  TagForChildDirectedTreatment: 0
+  NPA: 0
+  BannerPosition: 0
+  BannerSize: 4
+  Gender: 0
