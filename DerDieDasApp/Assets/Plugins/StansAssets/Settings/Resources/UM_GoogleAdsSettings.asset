@@ -15,16 +15,15 @@ MonoBehaviour:
   LastVersionCode: 
   AndroidIds:
     AppId: ca-app-pub-5730952597017034~5802531684
-    BannerId: ca-app-pub-5730952597017034/5610959993
+    BannerId: app-pub-5730952597017034/5610959993
     NonRewardedId: ca-app-pub-5730952597017034/1024013575
-    RewardedId: 
+    RewardedId: ca-app-pub-5730952597017034/1024013575
   IOSIds:
     AppId: ca-app-pub-5730952597017034~1883661494
     BannerId: ca-app-pub-5730952597017034/1013432952
     NonRewardedId: ca-app-pub-5730952597017034/7526870416
-    RewardedId: 
-  TestDevices:
-  - iPhone 11
+    RewardedId: ca-app-pub-5730952597017034/7526870416
+  TestDevices: []
   Keywords: []
   TagForChildDirectedTreatment: 0
   NPA: 0

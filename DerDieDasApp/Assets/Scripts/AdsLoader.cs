@@ -42,7 +42,7 @@ public class AdsLoader : MonoBehaviour
         ios.AppId = "ca-app-pub-5730952597017034~1883661494";
         ios.BannerId = "ca-app-pub-5730952597017034/1013432952";
         ios.RewardedId = "ca-app-pub-5730952597017034/7526870416";
-        ios.NonRewardedId = "ca-app-pub-5730952597017034/7526870416";
+        ios.NonRewardedId = "ca-app-pub-5730952597017034/7526870416e";
 
         RequestInterstitial();
         RequestBanner();
