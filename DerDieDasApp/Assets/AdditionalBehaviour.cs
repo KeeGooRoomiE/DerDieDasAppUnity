@@ -24,7 +24,7 @@ public class AdditionalBehaviour : MonoBehaviour
 
     public void OpenGWALink()
     {
-        Application.OpenURL("www.germanwithandy.com");
+        Application.OpenURL("https://www.germanwithandy.com");
     }
 
     public void OpenPreplyLink()
@@ -39,14 +39,14 @@ public class AdditionalBehaviour : MonoBehaviour
 
     public void OpenAndyLink()
     {
-        Application.OpenURL("www.artikel-andy.com");
+        Application.OpenURL("https://www.artikel-andy.com");
     }
 
     private void SendEmail()
     {
         string email = "contact@laaany.com";
         string subject = MyEscapeURL("DerDieDas Support Request");
-        string body = MyEscapeURL("Mail sended via DerDieDasApp.");
+        string body = MyEscapeURL("Mail sent via DDD-App.");
         Application.OpenURL("mailto:" + email + "?subject=" + subject + "&body=" + body);
     }
 
