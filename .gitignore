@@ -86,3 +86,6 @@ DerDieDasApp/Library/ArtifactDB
 DerDieDasApp/Library/
 DerDieDasApp/Library/PlayerDataCache/Android/Data/sharedassets0.assets
 *.assets
+DerDieDasApp/Library/SourceAssetDB
+*.icloud
+DerDieDasApp/Library/SourceAssetDB
