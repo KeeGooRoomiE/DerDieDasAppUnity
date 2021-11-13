@@ -796,4 +796,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Game.unity
-  playerPath: /Users/xandergusarov/Desktop/DDDEnd.apk
+  playerPath: /Users/xandergusarov/Desktop/DDDEnd_GPReady.apk
