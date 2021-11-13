@@ -7,6 +7,8 @@ using UnityEngine.Networking;
 
 public class AdditionalBehaviour : MonoBehaviour
 {
+    [SerializeField] private AudioSource sound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +70,11 @@ public class AdditionalBehaviour : MonoBehaviour
     public void OpenAndyLink()
     {
         Application.OpenURL("https://www.artikel-andy.com");
+    }
+
+    public void ButtonSound()
+    {
+        sound.Play();
     }
 
     private void SendEmail()

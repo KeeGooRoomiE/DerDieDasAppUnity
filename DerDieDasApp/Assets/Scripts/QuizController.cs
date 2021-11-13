@@ -6,8 +6,13 @@ using TMPro;
 
 public class QuizController : MonoBehaviour
 {
-    public Image falseStateImage;
-    public Image trueStateImage;
+    //public Image falseStateImage;
+    public Image reactionImage;
+    [SerializeField] private Sprite trueSprite;
+    [SerializeField] private Sprite falseSprite;
+    [SerializeField] private AudioSource reactionSource;
+    [SerializeField] private AudioClip trueAudio;
+    [SerializeField] private AudioClip falseAudio;
     public Slider progressBarSlider;
     public Image targetImage;
     public TextMeshProUGUI cardName;
@@ -35,21 +40,26 @@ public class QuizController : MonoBehaviour
     {
         if (isRight == true)
         {
-            trueStateImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
-            falseStateImage.color = new Color(1.0f, 1.0f, 1.0f, 0f);
+            reactionImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            reactionImage.sprite = trueSprite;
+            reactionSource.clip = trueAudio;
+            //falseStateImage.color = new Color(1.0f, 1.0f, 1.0f, 0f);
         } else
         {
-            trueStateImage.color = new Color(1.0f, 1.0f, 1.0f, 0f);
-            falseStateImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            reactionImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            reactionImage.sprite = falseSprite;
+            reactionSource.clip = falseAudio;
+            //falseStateImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         }
 
+        reactionSource.Play();
         nextQuizButton.interactable = isRight;
     }
 
     public void ResetQuiz()
     {
-        trueStateImage.color = new Color(1.0f, 1.0f, 1.0f, 0f);
-        falseStateImage.color = new Color(1.0f, 1.0f, 1.0f, 0f);
+        reactionImage.color = new Color(1.0f, 1.0f, 1.0f, 0f);
+        //falseStateImage.color = new Color(1.0f, 1.0f, 1.0f, 0f);
         tippButton.interactable = true;
         tippButton.isOn = false;
         favButton.isOn = false;
